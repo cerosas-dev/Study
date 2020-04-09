@@ -633,23 +633,6 @@
 
 * String Manipulation
 
-	- Get all possible permutations of a String
-
-	```java
-	private static void permutation(String prefix, String str) {
-		int n = str.length();
-		if (n == 0) System.out.println(prefix);
-		else {
-			for (int i = 0; i < n; i++) {
-				String _prefix = prefix + str.charAt(i);
-				String _string = str.substring(0, i);
-				_string += str.substring(i + 1, n);
-				permutation(_prefix, _string);
-			}
-		}
-	}
-	```
-
 	- The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences). It differs from the longest common substring problem: unlike substrings, subsequences are not required to occupy consecutive positions within the original sequences.
 
 	```java
@@ -672,6 +655,24 @@
 			}
 		}
 		return cmn[size_1 - 1][size_2 - 1];
+	}
+	```
+
+	- A permutation, also called an “arrangement number” or “order, ” is a rearrangement of the elements of an ordered list S into a one-to-one correspondence with S itself. A string of length n has n! permutation. The permutations of string "ABC" are ["ABC", "ACB", "BAC", "BCA", "CBA", "CAB"].
+
+	```java
+	static void permute(String s, ArrayList<String> p, int l, r int) {
+		if (l == r) { p.add(s); } 
+		else {
+			for (int i = l; i <= r; i++) {
+				String tmp = swap(s, l, i);
+				permute(tmp, p, l + 1, r);
+			}
+		}
+	}
+	
+	static String swap(String s, int l, int r) {
+		return s.substring(0, l) + s.charAt(r) + s.substring(l + 1, r) + s.substring(r + 1);
 	}
 	```
 
