@@ -1,0 +1,1402 @@
+[
+    {
+        "position":1,
+        "title":"Sgt. Pepper's Lonely Hearts Club Band",
+        "year":1967,
+        "band":"The Beatles",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/50/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg"
+    },
+    {
+        "position":2,
+        "title":"Pet Sounds",
+        "year":1966,
+        "band":"The Beach Boys",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/b/bb/PetSoundsCover.jpg"
+    },
+    {
+        "position":3,
+        "title":"What's Going On",
+        "year":1971,
+        "band":"Marvin Gaye",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/8/84/MarvinGayeWhat%27sGoingOnalbumcover.jpg"
+    },
+    {
+        "position":4,
+        "title":"Dark Side Of The Moon",
+        "year":1973,
+        "band":"Pink Floyd",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png"
+    },
+    {
+        "position":5,
+        "title":"Revolver",
+        "year":1966,
+        "band":"The Beatles",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/1/16/Revolver.jpg"
+    },
+    {
+        "position":6,
+        "title":"Live at the Apollo",
+        "year":1963,
+        "band":"James Brown",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/James_Brown-Live_at_the_Apollo_%28album_cover%29.jpg/220px-James_Brown-Live_at_the_Apollo_%28album_cover%29.jpg"
+    },
+    {
+        "position":7,
+        "title":"Highway 61 Revisited",
+        "year":1965,
+        "band":"Bob Dylan",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/9/95/Bob_Dylan_-_Highway_61_Revisited.jpg"
+    },
+    {
+        "position":8,
+        "title":"Thriller",
+        "year":1982,
+        "band":"Michael Jackson",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"
+    },
+    {
+        "position":9,
+        "title":"Are You Experienced?",
+        "year":1967,
+        "band":"Jimi Hendrix",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/1/17/AreyouexpUK.jpg"
+    },
+    {
+        "position":10,
+        "title":"Rubber Soul",
+        "year":1965,
+        "band":"The Beatles",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/7/74/Rubber_Soul.jpg"
+    },
+    {
+        "position":11,
+        "title":"It Takes A Nation Of Millions To Hold Us Back",
+        "year":1988,
+        "band":"Public Enemy",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/7/73/PublicEnemyItTakesaNationofMillionstoHoldUsBack.jpg"
+    },
+    {
+        "position":12,
+        "title":"Nevermind",
+        "year":1991,
+        "band":"Nirvana",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg"
+    },
+    {
+        "position":13,
+        "title":"Elvis Presley",
+        "year":1956,
+        "band":"Elvis Presley",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/f/f5/Elvis_Presley_LPM-1254_Album_Cover.jpg"
+    },
+    {
+        "position":14,
+        "title":"Born To Run",
+        "year":1975,
+        "band":"Bruce Springsteen",
+        "cover":"https://i.pinimg.com/originals/ee/cb/be/eecbbe9530795192cea4805fb967107b.jpg"
+    },
+    {
+        "position":15,
+        "title":"Exile On Main Street",
+        "year":1972,
+        "band":"The Rolling Stones",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/6/6a/Pussy_Galore_-_Exile_on_Main_St.jpg"
+    },
+    {
+        "position":16,
+        "title":"Blonde On Blonde",
+        "year":1966,
+        "band":"Bob Dylan",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
+    },
+    {
+        "position":17,
+        "title":"Innervisions",
+        "year":1973,
+        "band":"Stevie Wonder",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/3/3b/Steviewonder_innervisions.jpg"
+    },
+    {
+        "position":18,
+        "title":"London Calling",
+        "year":1979,
+        "band":"The Clash",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/0/00/TheClashLondonCallingalbumcover.jpg/220px-TheClashLondonCallingalbumcover.jpg"
+    },
+    {
+        "position":19,
+        "title":"Abbey Road",
+        "year":1969,
+        "band":"The Beatles",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
+    },
+    {
+        "position":20,
+        "title":"Purple Rain",
+        "year":1984,
+        "band":"Prince",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg"
+    },
+    {
+        "position":21,
+        "title":"Who's Next",
+        "year":1971,
+        "band":"The Who",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Whosnext.jpg/220px-Whosnext.jpg"
+    },
+    {
+        "position":22,
+        "title":"Led Zeppelin II",
+        "year":1969,
+        "band":"Led Zeppelin",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/2/20/Led_Zeppelin_-_Led_Zeppelin_II.jpg"
+    },
+    {
+        "position":23,
+        "title":"Songs In The Key Of Life",
+        "year":1976,
+        "band":"Stevie Wonder",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/e/e2/Songs_in_the_key_of_life.jpg"
+    },
+    {
+        "position":24,
+        "title":"The Joshua Tree",
+        "year":1987,
+        "band":"U2",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/6/6b/The_Joshua_Tree.png"
+    },
+    {
+        "position":25,
+        "title":"Rumours",
+        "year":1977,
+        "band":"Fleetwood Mac",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"
+    },
+    {
+        "position":26,
+        "title":"The Beatles (The White Album)",
+        "year":1968,
+        "band":"The Beatles",
+        "cover":"https://upload.wikimedia.org/wikipedia/commons/2/20/TheBeatles68LP.jpg"
+    },
+    {
+        "position":27,
+        "title":"I Never Loved A Man the Way I Love You",
+        "year":1967,
+        "band":"Aretha Franklin",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/1/15/Aretha_Franklin_%E2%80%93_I_Never_Loved_a_Man_the_Way_I_Love_You.jpg"
+    },
+    {
+        "position":28,
+        "title":"Modern Sounds in Country and Western Music",
+        "year":1962,
+        "band":"Ray Charles",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/7/74/ModernSoundsInC%26WMusic.jpg"
+    },
+    {
+        "position":29,
+        "title":"Blue",
+        "year":1971,
+        "band":"Joni Mitchell",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg"
+    },
+    {
+        "position":30,
+        "title":"Tapestry",
+        "year":1971,
+        "band":"Carole King",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Carole_King_-_Tapestry.jpg"
+    },
+    {
+        "position":31,
+        "title":"Raising Hell",
+        "year":1986,
+        "band":"Run-D.M.C.",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/9/93/Raising_Hell_%28Run_DMC_album_-_cover_art%29.jpg"
+    },
+    {
+        "position":32,
+        "title":"Tommy",
+        "year":1969,
+        "band":"The Who",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/1/19/Tommyalbumcover.jpg"
+    },
+    {
+        "position":33,
+        "title":"Led Zeppelin IV",
+        "year":1971,
+        "band":"Led Zeppelin",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
+    },
+    {
+        "position":34,
+        "title":"The Velvet Underground & Nico",
+        "year":1967,
+        "band":"The Velvet Underground",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/0/0c/Velvet_Underground_and_Nico.jpg"
+    },
+    {
+        "position":35,
+        "title":"Appetite For Destruction",
+        "year":1987,
+        "band":"Guns N' Roses",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg"
+    },
+    {
+        "position":36,
+        "title":"Paranoid",
+        "year":1970,
+        "band":"Black Sabbath",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/6/64/Black_Sabbath_-_Paranoid.jpg"
+    },
+    {
+        "position":37,
+        "title":"There's A Riot Goin' On",
+        "year":1971,
+        "band":"Sly & The Family Stone",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Slyfam-riot1.jpg/220px-Slyfam-riot1.jpg"
+    },
+    {
+        "position":38,
+        "title":"Ziggy Stardust",
+        "year":1972,
+        "band":"David Bowie",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/0/01/ZiggyStardust.jpg"
+    },
+    {
+        "position":39,
+        "title":"Let It Bleed",
+        "year":1969,
+        "band":"The Rolling Stones",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/LetitbleedRS.jpg/220px-LetitbleedRS.jpg"
+    },
+    {
+        "position":40,
+        "title":"Bringing It All Back Home",
+        "year":1965,
+        "band":"Bob Dylan",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Bob_Dylan_-_Bringing_It_All_Back_Home.jpg/220px-Bob_Dylan_-_Bringing_It_All_Back_Home.jpg"
+    },
+    {
+        "position":41,
+        "title":"Goodbye Yellow Brick Road",
+        "year":1973,
+        "band":"Elton John",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/8/86/Elton_John_-_Goodbye_Yellow_Brick_Road.jpg"
+    },
+    {
+        "position":42,
+        "title":"Saturday Night Fever Soundtrack",
+        "year":1977,
+        "band":"Various Artists",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":43,
+        "title":"Ten",
+        "year":1991,
+        "band":"Pearl Jam",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/2/2d/PearlJam-Ten2.jpg"
+    },
+    {
+        "position":44,
+        "title":"Led Zeppelin I",
+        "year":1969,
+        "band":"Led Zeppelin",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png/220px-Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png"
+    },
+    {
+        "position":45,
+        "title":"The Doors",
+        "year":1967,
+        "band":"The Doors",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/9/98/TheDoorsTheDoorsalbumcover.jpg"
+    },
+    {
+        "position":46,
+        "title":"Superfly",
+        "year":1972,
+        "band":"Curtis Mayfield",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/2/26/CurtisMayfieldSuperfly.jpg"
+    },
+    {
+        "position":47,
+        "title":"The Miseducation of Lauryn Hill",
+        "year":1998,
+        "band":"Lauryn Hill",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/55/LaurynHillTheMiseducationofLaurynHillalbumcover.jpg"
+    },
+    {
+        "position":48,
+        "title":"Back In Black",
+        "year":1980,
+        "band":"AC/DC",
+        "cover":"https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
+    },
+    {
+        "position":49,
+        "title":"Born in the USA",
+        "year":1984,
+        "band":"Bruce Springsteen",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/3/31/BruceBorn1984.JPG"
+    },
+    {
+        "position":50,
+        "title":"Licensed to Ill",
+        "year":1986,
+        "band":"Beastie Boys",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/5c/Licensed_to_ill.jpg"
+    },
+    {
+        "position":51,
+        "title":"Never Mind the Bollocks",
+        "year":1977,
+        "band":"The Sex Pistols",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":52,
+        "title":"Talking Book",
+        "year":1972,
+        "band":"Stevie Wonder",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":53,
+        "title":"Lady Soul",
+        "year":1968,
+        "band":"Aretha Franklin",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":54,
+        "title":"Sign 'O' The Times",
+        "year":1987,
+        "band":"Prince",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":55,
+        "title":"The Ramones",
+        "year":1976,
+        "band":"The Ramones",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":56,
+        "title":"Otis Blue",
+        "year":1965,
+        "band":"Otis Redding",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":57,
+        "title":"Straight Outta Compton",
+        "year":1989,
+        "band":"N.W.A",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":58,
+        "title":"Moondance",
+        "year":1970,
+        "band":"Van Morrison",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":59,
+        "title":"After the Goldrush",
+        "year":1970,
+        "band":"Neil Young",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":60,
+        "title":"The Chronic",
+        "year":1992,
+        "band":"Dr. Dre",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":61,
+        "title":"The Wall",
+        "year":1979,
+        "band":"Pink Floyd",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":62,
+        "title":"Hotel California",
+        "year":1976,
+        "band":"The Eagles",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":63,
+        "title":"Van Halen",
+        "year":1978,
+        "band":"Van Halen",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":64,
+        "title":"Electric Ladyland",
+        "year":1968,
+        "band":"Jimi Hendrix",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":65,
+        "title":"Ok Computer",
+        "year":1997,
+        "band":"Radiohead",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":66,
+        "title":"Automatic for the People",
+        "year":1992,
+        "band":"R.E.M.",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":67,
+        "title":"Blood On the Tracks",
+        "year":1975,
+        "band":"Bob Dylan",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":68,
+        "title":"Bridge Over Troubled Water",
+        "year":1970,
+        "band":"Simon & Garfunkel",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":69,
+        "title":"Murmur",
+        "year":1983,
+        "band":"R.E.M.",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":70,
+        "title":"Like A Virgin",
+        "year":1984,
+        "band":"Madonna",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":71,
+        "title":"A Hard Day's Night",
+        "year":1964,
+        "band":"The Beatles",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":72,
+        "title":"Off the Wall",
+        "year":1979,
+        "band":"Michael Jackson",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":73,
+        "title":"Achtung Baby",
+        "year":1991,
+        "band":"U2",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":74,
+        "title":"The Band",
+        "year":1969,
+        "band":"The Band",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":75,
+        "title":"Stand!",
+        "year":1969,
+        "band":"Sly & The Family Stone",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":76,
+        "title":"From Elvis In Memphis",
+        "year":1969,
+        "band":"Elvis Presely",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":77,
+        "title":"Metallica (The Black Album)",
+        "year":1991,
+        "band":"Metallica",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":78,
+        "title":"Sticky Fingers",
+        "year":1971,
+        "band":"The Rolling Stones",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":79,
+        "title":"Synchronicity",
+        "year":1983,
+        "band":"The Police",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":80,
+        "title":"1999",
+        "year":1982,
+        "band":"Prince",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":81,
+        "title":"21",
+        "year":2011,
+        "band":"Adele",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":82,
+        "title":"Paul's Boutique",
+        "year":1989,
+        "band":"Beastie Boys",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":83,
+        "title":"Astral Weeks",
+        "year":1968,
+        "band":"Van Morrison",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":84,
+        "title":"Number Of the Beast",
+        "year":1982,
+        "band":"Iron Maiden",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":85,
+        "title":"Machine Head",
+        "year":1972,
+        "band":"Deep Purple",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":86,
+        "title":"Surrealistic Pillow",
+        "year":1967,
+        "band":"Jefferson Airplane",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":87,
+        "title":"Master Of Puppets",
+        "year":1986,
+        "band":"Metallica",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":88,
+        "title":"The Clash",
+        "year":1977,
+        "band":"The Clash",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":89,
+        "title":"Remain In Light",
+        "year":1980,
+        "band":"Talking Heads",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":90,
+        "title":"Plastic Ono Band",
+        "year":1970,
+        "band":"John Lennon",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":91,
+        "title":"Black Sabbath",
+        "year":1970,
+        "band":"Black Sabbath",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":92,
+        "title":"3 Feet High and Rising",
+        "year":1989,
+        "band":"De La Soul",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":93,
+        "title":"Catch A Fire",
+        "year":1973,
+        "band":"Bob Marley & The Wailers",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":94,
+        "title":"The Queen Is Dead",
+        "year":1986,
+        "band":"The Smiths",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":95,
+        "title":"The 'Chirping' Crickets",
+        "year":1957,
+        "band":"Buddy Holly",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":96,
+        "title":"Live At Leeds",
+        "year":1970,
+        "band":"The Who",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":97,
+        "title":"good kid, M.A.D.D. city",
+        "year":2012,
+        "band":"Kendrick Lamar",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":98,
+        "title":"Paid In Full",
+        "year":1987,
+        "band":"Eric B. & Rakim",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":99,
+        "title":"Music From Big Pink",
+        "year":1968,
+        "band":"The Band",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":100,
+        "title":"Fullfillingness' First Finale",
+        "year":1974,
+        "band":"Stevie Wonder",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":101,
+        "title":"Disraeli Gears",
+        "year":1967,
+        "band":"Cream",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":102,
+        "title":"Axis Bold As Love",
+        "year":1967,
+        "band":"Jimi Hendrix",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":103,
+        "title":"A Night At The Opera",
+        "year":1975,
+        "band":"Queen",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":104,
+        "title":"DéjàVu",
+        "year":1970,
+        "band":"Crosby, Stills, Nash, & Young",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":105,
+        "title":"Harvest",
+        "year":1972,
+        "band":"Neil Young",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":106,
+        "title":"Freewheelin' Bob Dylan",
+        "year":1963,
+        "band":"Bob Dylan",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":107,
+        "title":"Beggar's Banquet",
+        "year":1968,
+        "band":"The Rolling Stones",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":108,
+        "title":"In The Court Of The Crimson King",
+        "year":1969,
+        "band":"King Crimson",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":109,
+        "title":"Imagine",
+        "year":1971,
+        "band":"John Lennon",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":110,
+        "title":"Sweetheart of the Rodeo",
+        "year":1968,
+        "band":"The Byrds",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":111,
+        "title":"Horses",
+        "year":1975,
+        "band":"Patti Smith",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":112,
+        "title":"Days Of Future Passed",
+        "year":1967,
+        "band":"The Moody Blues",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":113,
+        "title":"Like A Prayer",
+        "year":1989,
+        "band":"Madonna",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":114,
+        "title":"Here's Little Richard",
+        "year":1957,
+        "band":"Little Richard",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":115,
+        "title":"Jagged Little Pill",
+        "year":1995,
+        "band":"Alanis Morissette",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":116,
+        "title":"Kick Out The Jams",
+        "year":1969,
+        "band":"The MC5",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":117,
+        "title":"All Things Must Pass",
+        "year":1970,
+        "band":"George Harrison",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":118,
+        "title":"Dookie",
+        "year":1994,
+        "band":"Green Day",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":119,
+        "title":"Hot Buttered Soul",
+        "year":1969,
+        "band":"Issac Hayes",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":120,
+        "title":"If You Can Believe Your Eyes and Ears",
+        "year":1966,
+        "band":"The Mamas & The Papas",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":121,
+        "title":"Let's Get It On",
+        "year":1973,
+        "band":"Marvin Gaye",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":122,
+        "title":"Live at the Fillmore East",
+        "year":1971,
+        "band":"The Allman Brothers Band",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":123,
+        "title":"Fresh",
+        "year":1973,
+        "band":"Sly & The Family Stone",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":124,
+        "title":"My Aim Is True",
+        "year":1977,
+        "band":"Elvis Costello",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":125,
+        "title":"Something Else",
+        "year":1968,
+        "band":"The Kinks",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":126,
+        "title":"Captain Fantastic & The Brown Dirt Cowboy",
+        "year":1975,
+        "band":"Elton John",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":127,
+        "title":"The Beach Boys Today!",
+        "year":1965,
+        "band":"The Beach Boys",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":128,
+        "title":"Abraxas",
+        "year":1970,
+        "band":"Santana",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":129,
+        "title":"Low",
+        "year":1978,
+        "band":"David Bowie",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":130,
+        "title":"Rock Around The Clock",
+        "year":1956,
+        "band":"Bill Haley & His Comets",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":131,
+        "title":"Graceland",
+        "year":1986,
+        "band":"Paul Simon",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":132,
+        "title":"Radio",
+        "year":1985,
+        "band":"LL Cool J",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":133,
+        "title":"Fun House",
+        "year":1970,
+        "band":"Iggy Pop & The Stooges",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":134,
+        "title":"Ray Charles at Newport",
+        "year":1958,
+        "band":"Ray Charles",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":135,
+        "title":"The Marshall Mathers LP",
+        "year":2000,
+        "band":"Eminem",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":136,
+        "title":"Marquee Moon",
+        "year":1977,
+        "band":"Television",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":137,
+        "title":"The Stone Roses",
+        "year":1989,
+        "band":"The Stone Roses",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":138,
+        "title":"Cosmo's Factory",
+        "year":1970,
+        "band":"Creedence Clearwater Revival",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":139,
+        "title":"Doolittle",
+        "year":1989,
+        "band":"Pixies",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":140,
+        "title":"Stankonia",
+        "year":2000,
+        "band":"OutKast",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":141,
+        "title":"Forever Changes",
+        "year":1967,
+        "band":"Love",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":142,
+        "title":"Sweet Baby James",
+        "year":1970,
+        "band":"James Taylor",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":143,
+        "title":"Run D.M.C.",
+        "year":1984,
+        "band":"Run-D.M.C.",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":144,
+        "title":"Call Me",
+        "year":1973,
+        "band":"Al Green",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":145,
+        "title":"Freak Out!",
+        "year":1966,
+        "band":"Frank Zappa & The Mothers Of Invention",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":146,
+        "title":"One Nation Under A Groove",
+        "year":1978,
+        "band":"Funkadelic",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":147,
+        "title":"At Last",
+        "year":1961,
+        "band":"Etta James",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":148,
+        "title":"Pearl",
+        "year":1971,
+        "band":"Janis Joplin",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":149,
+        "title":"Blood Sugar Sex Magik",
+        "year":1991,
+        "band":"Red Hot Chili Peppers",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":150,
+        "title":"Layla",
+        "year":1970,
+        "band":"Derek & The Dominos",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":151,
+        "title":"Ready to Die",
+        "year":1994,
+        "band":"Notorious B.I.G.",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":152,
+        "title":"Bad",
+        "year":1987,
+        "band":"Michael Jackson",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":153,
+        "title":"Back to Black",
+        "year":2006,
+        "band":"Amy Winehouse",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":154,
+        "title":"Surfin U.S.A.",
+        "year":1963,
+        "band":"The Beach Boys",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":155,
+        "title":"Court and Spark",
+        "year":1974,
+        "band":"Joni Mitchell",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":156,
+        "title":"Physical Graffiti",
+        "year":1975,
+        "band":"Led Zeppelin",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":157,
+        "title":"Parallel Lines",
+        "year":1978,
+        "band":"Blondie",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":158,
+        "title":"The Piper at the Gates of Dawn",
+        "year":1967,
+        "band":"Pink Floyd",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":159,
+        "title":"Cheap Thrills",
+        "year":1968,
+        "band":"Big Brother & the Holding Co.",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":160,
+        "title":"(What's the Story) Morning Glory",
+        "year":1995,
+        "band":"Oasis",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":161,
+        "title":"Maggot Brain",
+        "year":1971,
+        "band":"Funkadelic",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":162,
+        "title":"Darkness on the Edge of Town",
+        "year":1978,
+        "band":"Bruce Springsteen",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":163,
+        "title":"CrazySexyCool",
+        "year":1994,
+        "band":"TLC",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":164,
+        "title":"Babel",
+        "year":2012,
+        "band":"Mumford & Sons",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":165,
+        "title":"Band On The Run",
+        "year":1973,
+        "band":"Paul McCartney/Wings",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":166,
+        "title":"Bo Diddley",
+        "year":1958,
+        "band":"Bo Diddley",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":167,
+        "title":"The Score",
+        "year":1996,
+        "band":"Fugees",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":168,
+        "title":"Exodus",
+        "year":1977,
+        "band":"Bob Marley & the Wailers",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":169,
+        "title":"The Who Sell Out",
+        "year":1967,
+        "band":"The Who",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":170,
+        "title":"Going To A Go-Go",
+        "year":1965,
+        "band":"Smokey Robinson & The Miracles",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":171,
+        "title":"Aqualung",
+        "year":1971,
+        "band":"Jethro Tull",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":172,
+        "title":"The Low End Theory",
+        "year":1991,
+        "band":"A Tribe Called Quest",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":173,
+        "title":"Mr. Tambourine Man",
+        "year":1965,
+        "band":"The Byrds",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":174,
+        "title":"Illmatic",
+        "year":1994,
+        "band":"Nas",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":175,
+        "title":"Fear Of A Black Planet",
+        "year":1990,
+        "band":"Public Enemy",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":176,
+        "title":"The Ventures In Space",
+        "year":1964,
+        "band":"The Ventures",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":177,
+        "title":"Headquarters",
+        "year":1967,
+        "band":"The Monkees",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":178,
+        "title":"Unknown Pleasures",
+        "year":1979,
+        "band":"Joy Division",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":179,
+        "title":"American Idiot",
+        "year":2004,
+        "band":"Green Day",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":180,
+        "title":"Young, Gifted & Black",
+        "year":1972,
+        "band":"Aretha Franklin",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":181,
+        "title":"Toys in the Attic",
+        "year":1975,
+        "band":"Aerosmith",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":182,
+        "title":"Mellon Collie and the Infinite Sadness",
+        "year":1995,
+        "band":"The Smashing Pumpkins",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":183,
+        "title":"The Downward Spiral",
+        "year":1994,
+        "band":"Nine Inch Nails",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":184,
+        "title":"Speakerboxxx",
+        "year":2003,
+        "band":"OutKast",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":185,
+        "title":"The Fame",
+        "year":2008,
+        "band":"Lady Gaga",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":186,
+        "title":"All Eyez On Me",
+        "year":1996,
+        "band":"2Pac",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":187,
+        "title":"Ace Of Spades",
+        "year":1980,
+        "band":"Mot"        "örhead",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":188,
+        "title":"Daydream Nation",
+        "year":1988,
+        "band":"Sonic Youth",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":189,
+        "title":"Closer",
+        "year":1980,
+        "band":"Joy Division",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":190,
+        "title":"Fragile",
+        "year":1971,
+        "band":"Yes",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":191,
+        "title":"Please Please Me",
+        "year":1963,
+        "band":"The Beatles",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":192,
+        "title":"Rhythm Nation 1814",
+        "year":1989,
+        "band":"Janet Jackson",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":193,
+        "title":"American Beauty",
+        "year":1970,
+        "band":"The Grateful Dead",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":194,
+        "title":"Hysteria",
+        "year":1987,
+        "band":"Def Leppard",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":195,
+        "title":"Brothers In Arms",
+        "year":1985,
+        "band":"Dire Straits",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":196,
+        "title":"The Stranger",
+        "year":1977,
+        "band":"Billy Joel",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":197,
+        "title":"This Year's Model",
+        "year":1978,
+        "band":"Elvis Costello & The Attractions",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":198,
+        "title":"Enter the Wu-Tang (36 Chambers)",
+        "year":1993,
+        "band":"Wu-Tang Clan",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":199,
+        "title":"Bad Girls",
+        "year":1979,
+        "band":"Donna Summer",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    },
+    {
+        "position":200,
+        "title":"Kid A",
+        "year":2000,
+        "band":"Radiohead",
+        "cover":"https://mariannecathomen.com/wp-content/uploads/2019/05/default_cover_art.jpg"
+    }
+]
