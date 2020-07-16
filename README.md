@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="AndroidInterviewQuestions" src="https://raw.githubusercontent.com/MindorksOpenSource/android-interview-questions/master/assets/android_interview_questions.png">
+<img alt="AndroidInterviewQuestions" src="https://github.com/cerosas-dev/Study/raw/master/android_logo.png">
 </p>
 
 
