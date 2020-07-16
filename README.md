@@ -124,16 +124,13 @@
 
 * Queue
 	
-- Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
-	
+	* Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
 * Priority Queue
 	
-- A priority queue is different from a "normal" queue, because instead of being a "first-in-first-out" data structure, values come out in order by priority. 
-	
+	* A priority queue is different from a "normal" queue, because instead of being a "first-in-first-out" data structure, values come out in order by priority. 
 * Binary Tree [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree)
 	
-- A binary tree is made of nodes, where each node contains a "left" reference, a "right" reference, and a data element. The topmost node in the tree is called the root. Every node (excluding a root) in a tree is connected by a directed edge from exactly one other node. This node is called a parent. On the other hand, each node can be connected to arbitrary number of nodes, called children. Nodes with no children are called leaves, or external nodes. Nodes which are not leaves are called internal nodes. Nodes with the same parent are called siblings.
-	
+	* A binary tree is made of nodes, where each node contains a "left" reference, a "right" reference, and a data element. The topmost node in the tree is called the root. Every node (excluding a root) in a tree is connected by a directed edge from exactly one other node. This node is called a parent. On the other hand, each node can be connected to arbitrary number of nodes, called children. Nodes with no children are called leaves, or external nodes. Nodes which are not leaves are called internal nodes. Nodes with the same parent are called siblings.
 * Binary Search Tree
 	- A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties:
 		- The left sub-tree of a node has a key less than or equal to its parent node's key.
@@ -630,7 +627,25 @@
 
 * Dynamic Programming
 
+    * Dynamic Programming is mainly an optimization over plain [recursion](https://www.geeksforgeeks.org/recursion/). Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial. For example, if we write simple recursive solution for [Fibonacci Numbers](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/), we get exponential time complexity and if we optimize it by storing solutions of subproblems, time complexity reduces to linear.
+
+        
+
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Dynamic-Programming-1-1024x512.png" alt="DynamicProgramming" style="zoom:60%;" />
+
+        
+
 * Greedy Algorithm
+
+    * Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. So the problems where choosing locally optimal also leads to global solution are best fit for Greedy.
+
+        For example consider the [Fractional Knapsack Problem](https://www.geeksforgeeks.org/fractional-knapsack-problem/). The local optimal strategy is to choose the item that has maximum value vs weight ratio. This strategy also leads to global optimal solution because we allowed to take fractions of an item.
+
+        
+
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/Fractional-Knapsackexample-min.png" alt="GreedyAlgorithm" style="zoom:45%;" />
+
+        
 
 * String Manipulation
 
@@ -1397,9 +1412,11 @@
 * Tell about Constraint Layout [Mindorks](https://blog.mindorks.com/using-constraint-layout-in-android-531e68019cd)
 	
 	- Intention of `ConstraintLayout` is to optimize and flatten the view hierarchy of your layouts by applying some rules to each view to avoid nesting. Rules remind you of `RelativeLayout`, for example setting the left to the left of some other view.
-```
-app:layout_constraintBottom_toBottomOf="@+id/view1"
-```
+	
+	```java
+	app:layout_constraintBottom_toBottomOf="@+id/view1"
+	```
+
 	- Unlike `RelativeLayout`, `ConstraintLayout` offers bias value that is used to position a view in terms of 0% and 100% horizontal and vertical offset relative to the handles (marked with circle). These percentages (and fractions) offer seamless positioning of the view across different screen densities and sizes.
    ```java
 	app:layout_constraintHorizontal_bias="0.33" <!-- from 0.0 to 1.0 -->
@@ -1785,26 +1802,26 @@ Batch the network calls: You should batch the network calls if possible so that 
 	- No matter what hardware profile you want to support first, you need to create a layout that is responsive to even small variations in screen size.
 	- For Different screen size, The following is a list of resource directories in an application that provides different layout designs for different screen sizes and different bitmap drawables for small, medium, high, and extra high density screens.
 
+	```java
+		res/layout/my_layout.xml             // layout for normal screen size ("default")
+		res/layout-small/my_layout.xml       // layout for small screen size
+		res/layout-large/my_layout.xml       // layout for large screen size
+		res/layout-xlarge/my_layout.xml      // layout for extra large screen size
+		res/layout-xlarge-land/my_layout.xml // layout for extra large in landscape orientation
 
-```java
-	res/layout/my_layout.xml             // layout for normal screen size ("default")
-	res/layout-small/my_layout.xml       // layout for small screen size
-	res/layout-large/my_layout.xml       // layout for large screen size
-	res/layout-xlarge/my_layout.xml      // layout for extra large screen size
-	res/layout-xlarge-land/my_layout.xml // layout for extra large in landscape orientation
+		res/drawable-mdpi/my_icon.png        // bitmap for medium density
+		res/drawable-hdpi/my_icon.png        // bitmap for high density
+		res/drawable-xhdpi/my_icon.png       // bitmap for extra high density
+	```
+	-  The following code in the Manifest supports all dpis.
 
-	res/drawable-mdpi/my_icon.png        // bitmap for medium density
-	res/drawable-hdpi/my_icon.png        // bitmap for high density
-	res/drawable-xhdpi/my_icon.png       // bitmap for extra high density
-```
-	- The following code in the Manifest supports all dpis.
-```
-	<supports-screens android:smallScreens="true" 
-          android:normalScreens="true" 
-          android:largeScreens="true"
-          android:xlargeScreens="true"
-          android:anyDensity="true" />
-```
+	```xml
+		<supports-screens android:smallScreens="true" 
+	          android:normalScreens="true" 
+	          android:largeScreens="true"
+	          android:xlargeScreens="true"
+	          android:anyDensity="true" />
+	```
 #### Permissions
 
 * What are the different protection levels in permission?
