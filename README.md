@@ -42,7 +42,7 @@
 
         | Algorithm | Average | Worst Case |
         |:---------:|:-------:|:----------:|
-        | Space     | Θ(n)    | O(n)       |    
+        | Space     | Θ(n)    | O(n)       |
         | Search    | Θ(n)    | O(n)       |
         | Insert    | Θ(n)    | O(n)       |
         | Delete    | Θ(n)    | O(n)       |
@@ -56,24 +56,24 @@
     pointer pointing at the Head - the pointer is just `null`. The run time complexity for each of 
     the base methods are as follows:
 
-        | Algorithm | Average | Worst Case |
-        |:---------:|:-------:|:----------:|
-        | Space     | Θ(n)    | O(n)       |
-        | Search    | Θ(n)    | O(n)       |
-        | Insert    | Θ(1)    | O(1)       |
-        | Delete    | Θ(1)    | O(1)       |
+      | Algorithm | Average | Worst Case |
+      |:---------:|:-------:|:----------:|
+      | Space     | Θ(n)    | O(n)       |
+      | Search    | Θ(n)    | O(n)       |
+      | Insert    | Θ(1)    | O(1)       |
+      | Delete    | Θ(1)    | O(1)       |
 
 * DoublyLinkedList
    - A DoublyLinkedList is based on a LinkedList, but there is two pointers in each node, "previous" pointer holds reference to the previous node and "next" pointer holds reference to the next node. It also has a Head node, head node's next pointer references the first node in this DoublyLinkedList. The last node's "next" reference points to `null`, but if last node's next pointer points to the first node, such DoublyLinkedList is called "Circular DoublyLinkedList". This data structure is very convenient if you need to be able to traverse stored elements in both directions. 
-  
+   
        ![DoublyLinkedList](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png)
             
-        | Algorithm | Average | Worst Case |
-        |:---------:|:-------:|:----------:|
-        | Space     | Θ(n)    | O(n)       |
-        | Search    | Θ(n)    | O(n)       |
-        | Insert    | Θ(1)    | O(1)       |
-        | Delete    | Θ(1)    | O(1)       |
+       | Algorithm | Average | Worst Case |
+       |:---------:|:-------:|:----------:|
+       | Space     | Θ(n)    | O(n)       |
+       | Search    | Θ(n)    | O(n)       |
+       | Insert    | Θ(1)    | O(1)       |
+       | Delete    | Θ(1)    | O(1)       |
 
 * Stack
    - A Stack is a basic data structure with a "Last-in-First-out" (LIFO) semantics. This means that 
@@ -123,14 +123,17 @@
         </table>
 
 * Queue
-	- Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
-
+	
+- Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+	
 * Priority Queue
-	- A priority queue is different from a "normal" queue, because instead of being a "first-in-first-out" data structure, values come out in order by priority. 
-
+	
+- A priority queue is different from a "normal" queue, because instead of being a "first-in-first-out" data structure, values come out in order by priority. 
+	
 * Binary Tree [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree)
-	- A binary tree is made of nodes, where each node contains a "left" reference, a "right" reference, and a data element. The topmost node in the tree is called the root. Every node (excluding a root) in a tree is connected by a directed edge from exactly one other node. This node is called a parent. On the other hand, each node can be connected to arbitrary number of nodes, called children. Nodes with no children are called leaves, or external nodes. Nodes which are not leaves are called internal nodes. Nodes with the same parent are called siblings.
-
+	
+- A binary tree is made of nodes, where each node contains a "left" reference, a "right" reference, and a data element. The topmost node in the tree is called the root. Every node (excluding a root) in a tree is connected by a directed edge from exactly one other node. This node is called a parent. On the other hand, each node can be connected to arbitrary number of nodes, called children. Nodes with no children are called leaves, or external nodes. Nodes which are not leaves are called internal nodes. Nodes with the same parent are called siblings.
+	
 * Binary Search Tree
 	- A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties:
 		- The left sub-tree of a node has a key less than or equal to its parent node's key.
@@ -213,7 +216,7 @@
 	        }
 	        return root;
 	    }
-	    ```
+	  ```
 
 		- Pre Order traversal :
 		
@@ -497,8 +500,8 @@
     }
 	```
     - Merge sort [Wikipedia](https://en.wikipedia.org/wiki/Merge_sort?oldformat=true)
-        - This is a "divide and conquer" algorithm, meaning it recursively "divides" given array in to smaller parts (up to 1 element) and then sorts those parts, combining them with each other. This approach allows merge sort to achieve very high speed, while  doubling required space, of course, but today memory space is more available than it was a couple of years ago, so this trade-off is considered acceptable.   
-                <table>
+        - This is a "divide and conquer" algorithm, meaning it recursively "divides" given array in to smaller parts (up to 1 element) and then sorts those parts, combining them with each other. This approach allows merge sort to achieve very high speed, while  doubling required space, of course, but today memory space is more available than it was a couple of years ago, so this trade-off is considered acceptable.
+            <table>
             <tr>
                 <th colspan="3" align="center">Time Complexity</th>
                 <th align="center">Space Complexity</th>
@@ -516,7 +519,6 @@
                 <td align="center">O(n)</td>
             </tr>
             </table>
-            
 	```java
 	public static void merge(int arr[], int beg, int mid, int end) {
         int l = mid - beg + 1;
@@ -563,25 +565,24 @@
 
     - Quicksort [Wikipedia](https://en.wikipedia.org/wiki/Quicksort?oldformat=true)
         - Quicksort is considered, well, quite quick. When implemented correctly, it can be a significant number of times faster than its' main competitors. This algorithm is also of "divide and conquer" family and its' first step is to choose a "pivot" element (choosing it randomly, statistically, minimizes the chance to get the worst performance), then by comparing elements to this pivot, moving it closer and closer to its' final place. During this process, the elements that are bigger are moved to the right side of it and smaller elements to the left. After this is done, quicksort repeats this process for subarrays on each side of placed pivot (does first step recursively), until the array is sorted.
-                <table>
-                <tr>
-                    <th colspan="3" align="center">Time Complexity</th>
-                    <th align="center">Space Complexity</th>
-                </tr>
-                <tr>
-                    <th align="center">Best</th>
-                    <th align="center">Average</th>
-                    <th align="center">Worst</th>
-                    <th align="center">Worst</th>
-                </tr>
-                <tr>
-                    <td align="center">Ω(n log(n))</td>
-                    <td align="center">Θ(n log(n))</td>
-                    <td align="center">O(n^2)</td>
-                    <td align="center">O(1)</td>
-                </tr>
-                </table>  
-                
+            <table>
+            <tr>
+                <th colspan="3" align="center">Time Complexity</th>
+                <th align="center">Space Complexity</th>
+            </tr>
+            <tr>
+                <th align="center">Best</th>
+                <th align="center">Average</th>
+                <th align="center">Worst</th>
+                <th align="center">Worst</th>
+            </tr>
+            <tr>
+                <td align="center">Ω(n log(n))</td>
+                <td align="center">Θ(n log(n))</td>
+                <td align="center">O(n^2)</td>
+                <td align="center">O(1)</td>
+            </tr>
+            </table>
 	```java
 	public static int partition(int a[], int beg, int end) {
         int left, right, temp, loc, flag;
@@ -624,7 +625,7 @@
         }
     }
 	```
-                
+    
     - There are, of course, more sorting algorithms and their modifications. We strongly recommend all readers to familiarize themselves with a couple more, because knowing algorithms is very important quality of a candidate, applying for a job and it shows understanding of what is happening "under the hood".
 
 * Dynamic Programming
@@ -703,7 +704,7 @@
 				// Clear visited property of nodes
 				clearNodes();
 		    }
-		    ```
+		  ```
     - Depth First Search
 	    - DFS is another uninformed graph traversal algorithm which produces a non-optimal solution but can be useful for traversing quickly into deeper search domains. Depth first search is very similar to the BFS. With Depth first search you start at the top most node in a tree and then follow the left most branch until there exists no more leafs in that branch. At that point you will search the nearest ancestor with unexplored nodes until such time as you find the goal node.
 
@@ -726,19 +727,16 @@
 				// Clear visited property of nodes
 				clearNodes();
 		    }
-		    ```
+		  ```
 
 ### Core Java
 
 #### OOP
 
 * Explain OOP Concepts.
-    - Object-Oriented Programming is a methodology of designing a program using classes, objects, 
-    [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)),
-    [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)),
-    [abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)), and
-    [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
-
+  
+- Object-Oriented Programming is a methodology of designing a program using classes, objects, [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)), [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)), [abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)), and [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
+  
 * Differences between abstract classes and interfaces? [GitHub](https://arjun-sna.github.io/java/2017/02/02/abstractvsinterface/)
     - An abstract class, is a class that contains both concrete and abstract methods 
     (methods without implementations). An abstract method must be implemented by the abstract class
@@ -790,7 +788,7 @@
             }
         }
 	```
-        
+    
     Will output:
         
 	```java
@@ -822,8 +820,9 @@
         4. `public` modifier is widely-used on *classes*, *variables*, *constructors* and *methods* to grant access from any class and method anywhere. It should not be used everywhere as it implies that data marked with `public` is not sensitive and can not be used to harm the program.
 
 * Can an Interface implement another Interface?
-  - Yes, an interface can implement another interface (and more than one), but it needs to use `extends`, rather than `implements` keyword. And while you can not remove methods from parent interface, you can add new ones freely to your subinterface.
-
+  
+- Yes, an interface can implement another interface (and more than one), but it needs to use `extends`, rather than `implements` keyword. And while you can not remove methods from parent interface, you can add new ones freely to your subinterface.
+  
 * What is Polymorphism? What about Inheritance?
   - Polymorphism in Java has two types: Compile time polymorphism (static binding) and Runtime polymorphism (dynamic binding). Method overloading is an example of static polymorphism, while method overriding is an example of dynamic polymorphism.
 
@@ -876,17 +875,15 @@
 
 * Explain Generics in Java?
     - Generics were included in Java language to provide stronger type checks, by allowing the programmer to define, which classes can be used with other classes
-        > In a nutshell, generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar formal parameters used in method declarations, type parameters provide a way for you to re-use the same code with different inputs. The difference is that the inputs to formal parameters are values, while the inputs to type parameters are types. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/generics/why.html))
+    
+      In a nutshell, generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar formal parameters used in method declarations, type parameters provide a way for you to re-use the same code with different inputs. The difference is that the inputs to formal parameters are values, while the inputs to type parameters are types. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/generics/why.html))
 
-    - This means that, for example, you can define:
-        ```java
-        List<Integer> list = new ArrayList<>();
-        ```
-        And let the compiler take care of noticing, if you put some object, of type other than `Integer` into this list and warn you.
+    - This means that, for example, you can define: `List<Integer> list = new ArrayList<>();` and let the compiler take care of noticing, if you put some object, of type other than `Integer` into this list and warn you.
     - It should be noted that standard class hierarchy *does not* apply to generic types. It means that `Integer` in `List<Integer>` is not inherited from `<Number>` - it is actually inherited directly from `<Object>`. You can still put some constraints on what classes can be passed as a parameter into a generic by using [wildcards](https://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html) like `<?>`, `<? extends MyCustomClass>` or `<? super Number>`.
     - While generics are very useful, late inclusion into Java language has put some restraints on their implementation - backward compatibility required them to remain just "syntactic sugar" - they are erased ([type erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html)) during compile-time and replaced with `object` class.
-
+  
 * What is Java `PriorityQueue`?
+	
 	- An unbounded priority queue based on a priority heap. The elements of the priority queue are ordered according to their natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used. A priority queue does not permit null elements. A priority queue relying on natural ordering also does not permit insertion of non-comparable objects (doing so may result in ClassCastException). The head of this queue is the least element with respect to the specified ordering. If multiple elements are tied for least value, the head is one of those elements -- ties are broken arbitrarily. The queue retrieval operations poll, remove, peek, and element access the element at the head of the queue. A priority queue is unbounded, but has an internal capacity governing the size of an array used to store the elements on the queue. It is always at least as large as the queue size. As elements are added to a priority queue, its capacity grows automatically. The details of the growth policy are not specified.
 
 #### Objects and Primitives
@@ -909,8 +906,9 @@
   - `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
 
 * What does it means to say that a `String` is immutable?
-    - It means that once created, `String` object's `char[]` (its' containing value) is declared `final` and, therefore, it can not be changed during runtime.
-
+  
+- It means that once created, `String` object's `char[]` (its' containing value) is declared `final` and, therefore, it can not be changed during runtime.
+  
 * What is `String.intern()`? When and why should it be used?
 	- String Interning is a method of storing only one copy of each distinct String Value, which must be immutable. By applying String.intern() on a couple of strings will ensure that all strings having same contents share same memory. For example, if a name ‘Amy’ appears 100 times, by interning you ensure only one ‘Amy’ is actually allocated memory. This can be very useful to reduce memory requirements of your program. But be aware that the cache is maintained by JVM in permanent memory pool which is usually limited in size compared to heap so you should not use intern if you don’t have too many duplicate values intern() method : In Java, when we perform any operation using intern() method, it returns a canonical representation for the string object. A pool is managed by String class.
 		- When the intern() method is executed then it checks whether the String equals to this String Object is in the pool or not.
@@ -921,11 +919,13 @@
 * Can you list 8 primitive types in java?
 
 * What is the difference between an Integer and int?
-  - `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it.
-
+  
+- `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it.
+  
 * What is Autoboxing and Unboxing?
-  - Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter.
-
+  
+- Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter.
+  
 * Typecast in Java.
     - In Java, you can use casts to polymorph one class into another, compatible one. For example:
         ```java
@@ -1302,11 +1302,13 @@
 <table class="tablecontent"><tbody><tr><th>Folder Name</th><th>Description</th></tr><tr><td>src</td><td>The 'src' stands for <b>Source Code.</b> It contains the Java Source files.</td></tr><tr><td>gen</td><td>The 'gen' stands for <b>Generated Java Library.</b> This library is for Android internal use only.</td></tr><tr><td>Android 2.2</td><td>The Android Framework Library is stored here.</td></tr><tr><td>assets</td><td>It is used to store raw asset files.</td></tr><tr><td>libs</td><td>It contains private libraries.</td></tr><tr><td>res</td><td>The 'res' stands for <b>Resource file.</b> It can store resource files such as pictures, XML files, etc. It contains some additional folders such as Drawable, Layout and Values.<br><br><b>anim: </b>It is used for XML files that are compiled into animation objects.<br><b>color:</b> It is used for XML files that describe colors.<br><b>drawable:</b> It is used to store various graphics files. In Android project structure,<br><br><b>there are three types of drawable folders,</b><br>1. drawable-mdpi<br>2. drawable-hdpi<br>3. drawable-ldpi<br><br>The above drawable folders are required in order to adapt to different screen resolutions.<br><br><b>layout:</b> It is used for placing the XML layout files, which defines how various Android objects such as textbox, buttons, etc. are organized on the screen.<br><br><b>menu:</b> It is used for defining the XML files in the application menu.<br><br><b>raw:</b> The 'raw' stands for <b>Raw Asset Files.</b> These files are referenced from the application using a resource identifier in the R class.<br><b>For example,</b> good place for media is MP3 or Ogg files.<br><br><b>values:</b> It is used for XML files which stores various string values, such as titles, labels, etc.<br><br><b>xml:</b> It is used for configuring the application components.</td></tr><tr><td>AndroidManifest.xml</td><td>This file indicates the Android definition file. This file contains the information about the Android application such as minimum Android version, permission to access Android device capabilities such as Internet access permission, phone permission etc.</td></tr><tr><td>default.properties</td><td>This file contains the project settings, such as build the target. Do not edit this file manually. It should be maintained in a Source Revision Control System.</td></tr><tr><td>Proguard.cfg</td><td>This file defines how ProGuard optimizes and makes your code unclear.</td></tr><tr><td>MainLayout.xml</td><td>This file describes the layout of the page. So all the components such as textboxes, labels, radio buttons, etc. are displaying on the application screen.</td></tr><tr><td>Activity class</td><td>The application occupies the entire device screen which needs at least one class inherits from the Activity class. OnCreate() method initiates the application and loads the layout page.</td></tr></tbody></table>
 
 * What is `Context`? How is it used? [Medium](https://medium.com/p/understanding-context-in-android-application-330913e32514)
-	- It's the context of current state of the application/object. It lets newly-created objects understand what has been going on. Typically you call it to get information regarding another part of your program (activity and package/application). You can get the context by invoking `getApplicationContext()`, `getContext()`, `getBaseContext()` or `this` (when in a class that extends from Context, such as the Application, Activity, Service and IntentService classes).
-
+	
+- It's the context of current state of the application/object. It lets newly-created objects understand what has been going on. Typically you call it to get information regarding another part of your program (activity and package/application). You can get the context by invoking `getApplicationContext()`, `getContext()`, `getBaseContext()` or `this` (when in a class that extends from Context, such as the Application, Activity, Service and IntentService classes).
+	
 * What is `AndroidManifest.xml`?
-	- Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code.
-
+	
+- Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code.
+	
 * What is `Application` class?
 	- The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
@@ -1331,11 +1333,13 @@
 #### Fragments
 
 * What is `Fragment`?
-	- A Fragment represents a behavior or a portion of user interface in a FragmentActivity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running (sort of like a "sub activity" that you can reuse in different activities). A fragment must always be hosted in an activity and the fragment's lifecycle is directly affected by the host activity's lifecycle.
-
+	
+- A Fragment represents a behavior or a portion of user interface in a FragmentActivity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running (sort of like a "sub activity" that you can reuse in different activities). A fragment must always be hosted in an activity and the fragment's lifecycle is directly affected by the host activity's lifecycle.
+	
 * What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.
-	- A fragment has its own layout and its own behavior with its own lifecycle callbacks. You can add or remove fragments in an activity while the activity is running. You can combine multiple fragments in a single activity to build a multi-pane UI. A fragment can implement a behavior that has no user interface component.
-
+	
+- A fragment has its own layout and its own behavior with its own lifecycle callbacks. You can add or remove fragments in an activity while the activity is running. You can combine multiple fragments in a single activity to build a multi-pane UI. A fragment can implement a behavior that has no user interface component.
+	
 * Why is it recommended to use only the default constructor to create a `Fragment`? [StackOverflow](https://stackoverflow.com/a/16042750/2809326)
 	- The reason why you should be passing parameters through bundle is because when the system restores a fragment (e.g on config change), it will automatically restore your bundle.
 
@@ -1363,19 +1367,22 @@
 		![ViewLifeCycle](https://codentrick.com/content/images/2015/07/android_view_lifecycle.png)
 	
 * Difference between `View.GONE` and `View.INVISIBLE`?
-	- `View.INVISIBLE` This view is invisible, but it still takes up space for layout purposes. `View.GONE` This view is invisible, and it doesn't take any space for layout purposes.
-
+	
+- `View.INVISIBLE` This view is invisible, but it still takes up space for layout purposes. `View.GONE` This view is invisible, and it doesn't take any space for layout purposes.
+	
 * Can you create custom views? How?
-	- If you only need to make small adjustments to an existing widget or layout, you can simply subclass the widget or layout and override its methods. Creating your own View subclasses gives you precise control over the appearance and function of a screen element.
-
+	
+- If you only need to make small adjustments to an existing widget or layout, you can simply subclass the widget or layout and override its methods. Creating your own View subclasses gives you precise control over the appearance and function of a screen element.
+	
 * What are ViewGroups and how they are different from the Views?
 	- A ViewGroup is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers. This class also defines the ViewGroup.LayoutParams class which serves as the base class for layouts parameters.
 
 	- View class represents the basic building block for user interface components. A View occupies a rectangular area on the screen and is responsible for drawing and event handling. View is the base class for widgets, which are used to create interactive UI components (buttons, text fields, etc.).
 
 * What is a canvas?
-	- The Canvas class holds the "draw" calls. To draw something, you need 4 basic components: A Bitmap to hold the pixels, a Canvas to host the draw calls (writing into the bitmap), a drawing primitive (e.g. Rect, Path, text, Bitmap), and a paint (to describe the colors and styles for the drawing).
-
+	
+- The Canvas class holds the "draw" calls. To draw something, you need 4 basic components: A Bitmap to hold the pixels, a Canvas to host the draw calls (writing into the bitmap), a drawing primitive (e.g. Rect, Path, text, Bitmap), and a paint (to describe the colors and styles for the drawing).
+	
 * What is a `SurfaceView`?
 	- When you create a custom view and override its onDraw() method, all drawing happens on the UI thread. Drawing on the UI thread puts an upper limit on how long or complex your drawing operations can be, because your app has to complete all its work for every screen refresh. One option is to move some of the drawing work to a different thread using a SurfaceView. 
 		- All the views in your view hierarchy are rendered onto one Surface in the UI thread.
@@ -1384,9 +1391,11 @@
 		- To draw, start a thread, lock the SurfaceView's canvas, do your drawing, and post it to the Surface.
 
 * Relative Layout vs Linear Layout.
-	- `LinearLayout` adds view linearly either vertical or horizontal by the orientation set by you. It will add views one after another which will depend on the requirement of the design. And `RelativeLayout` adds view related with each other, there is no need to declare orientation in `RelativeLayout`.
-
+	
+- `LinearLayout` adds view linearly either vertical or horizontal by the orientation set by you. It will add views one after another which will depend on the requirement of the design. And `RelativeLayout` adds view related with each other, there is no need to declare orientation in `RelativeLayout`.
+	
 * Tell about Constraint Layout [Mindorks](https://blog.mindorks.com/using-constraint-layout-in-android-531e68019cd)
+	
 	- Intention of `ConstraintLayout` is to optimize and flatten the view hierarchy of your layouts by applying some rules to each view to avoid nesting. Rules remind you of `RelativeLayout`, for example setting the left to the left of some other view.
 ```
 app:layout_constraintBottom_toBottomOf="@+id/view1"
@@ -1432,8 +1441,9 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 #### Intents and Broadcasting
 
 * What is `Intent`? [StackOverflow](https://stackoverflow.com/questions/6578051/what-is-an-intent-in-android)
-	- An Intent is basically a message to say you did or want something to happen. Depending on the intent, apps or the OS might be listening for it and will react accordingly. Think of it as a blast email to a bunch of friends, in which you tell your friend John to do something, or to friends who can do X ("intent filters"), to do X. The other folks will ignore the email, but John (or friends who can do X) will react to it.
-
+	
+- An Intent is basically a message to say you did or want something to happen. Depending on the intent, apps or the OS might be listening for it and will react accordingly. Think of it as a blast email to a bunch of friends, in which you tell your friend John to do something, or to friends who can do X ("intent filters"), to do X. The other folks will ignore the email, but John (or friends who can do X) will react to it.
+	
 * What is an Implicit `Intent`?
 	- Is something which is sent from one activity to inbuilt android activity in android. When we work with implicit intents, we generally specify the action which we want to perform and optionally some data required for that action. Data is typically expressed as a Uri which can represent an image in the gallery or person in the contacts database. Implicit Intents do not directly specify the Android components which should be called , it only specifies action to be performed. An Uri can be used with the implicit intent to specify data type.
 
@@ -1466,8 +1476,9 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 		- `getType(Uri)` which returns the MIME type of data in the content provider.
 
 * What is a `BroadcastReceiver`? [StackOverflow](https://stackoverflow.com/questions/5296987/what-is-broadcastreceiver-and-when-we-use-it)
-	- A broadcast receiver is a component that responds to system-wide broadcast announcements. Many broadcasts originate from the system—for example, a broadcast announcing that the screen has turned off, the battery is low, or a picture was captured. Applications can also initiate broadcasts—for example, to let other applications know that some data has been downloaded to the device and is available for them to use. Although broadcast receivers don't display a user interface, they may create a status bar notification to alert the user when a broadcast event occurs.
-
+	
+- A broadcast receiver is a component that responds to system-wide broadcast announcements. Many broadcasts originate from the system—for example, a broadcast announcing that the screen has turned off, the battery is low, or a picture was captured. Applications can also initiate broadcasts—for example, to let other applications know that some data has been downloaded to the device and is available for them to use. Although broadcast receivers don't display a user interface, they may create a status bar notification to alert the user when a broadcast event occurs.
+	
 * What is a `LocalBroadcastManager`? [Developer Android](https://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html)
 	- Helper to register for and send broadcasts of Intents to local objects within your process. This has a number of advantages over sending global broadcasts with `sendBroadcast(Intent)`:
 		- You know that the data you are broadcasting won't leave your app, so don't need to worry about leaking private data.
@@ -1484,8 +1495,9 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 	</intent-filter>
 	```
 * What is a Sticky `Intent`? [AndroidInterview](http://www.androidinterview.com/what-is-a-sticky-intent/)
-	- Sticky Intent is also a type of Intent which allows a communication between function and a service sendStickyBroadcast() performs a sendBroadcast(Inent) know as sticky,the Intent your are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver(BroadcastReceiver, IntentFilter). In all other ways, this behaves the same as sendBroadcast(Intent).
-
+	
+- Sticky Intent is also a type of Intent which allows a communication between function and a service sendStickyBroadcast() performs a sendBroadcast(Inent) know as sticky,the Intent your are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver(BroadcastReceiver, IntentFilter). In all other ways, this behaves the same as sendBroadcast(Intent).
+	
 * Describe how broadcasts and intents work to be able to pass messages around your app?
 	- When a broadcast intent is created, it must include an action string in addition to optional data and a category string. As with standard intents, data is added to a broadcast intent using key-value pairs in conjunction with the putExtra() method of the intent object. The optional category string may be assigned to a broadcast intent via a call to the addCategory() method.
 
@@ -1588,14 +1600,17 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 	- FutureTask. FutureTask performs asynchronous processing, however, if the result is not ready yet or processing has not complete, calling get() will be block the thread.
 	- Java Timer / ScheduledThreadPoolExecutor. An example of using Java Timer to do something after 5 seconds. These can be used to schedule some processing on a background thread. There are other ways to handle the same in Android, you could use a Handler with postDelayed or Handler with sendMessageDelayed() and the handler can run on a background thread as shown above. Also, keep in mind that since this API is not aware of the Android lifecycle, any hard reference to an Activity, Fragment or View in here is a possible memory leak.
 * Why should you avoid to run non-ui code on the main thread?
-	- Because if that thread hogs it prevents user interaction (for more than 5 seconds), it causes Android to throw up the infamous Android Not Responsive (ANR) error.
-
+	
+- Because if that thread hogs it prevents user interaction (for more than 5 seconds), it causes Android to throw up the infamous Android Not Responsive (ANR) error.
+	
 * What is ANR? How can the ANR be prevented?
-	- When the UI thread of an Android app is blocked for too long (5 seconds), an "Application Not Responding" (ANR) error is triggered. If the app is in the foreground, the system displays a dialog to the user. The ANR dialog gives the user the opportunity to force quit the app. To avoid it, you must identify the places in your code where the app’s main thread is busy for more than 5 seconds. Look for the suspicious use cases in your app and try to reproduce the ANR.
-
+	
+- When the UI thread of an Android app is blocked for too long (5 seconds), an "Application Not Responding" (ANR) error is triggered. If the app is in the foreground, the system displays a dialog to the user. The ANR dialog gives the user the opportunity to force quit the app. To avoid it, you must identify the places in your code where the app’s main thread is busy for more than 5 seconds. Look for the suspicious use cases in your app and try to reproduce the ANR.
+	
 * What is an `AsyncTask`?
-	- AsyncTask is an abstract Android class which helps the Android applications to handle the Main UI thread in efficient way. AsyncTask class allows us to perform long lasting tasks/background operations and show the result on the UI thread without affecting the main thread.
-
+	
+- AsyncTask is an abstract Android class which helps the Android applications to handle the Main UI thread in efficient way. AsyncTask class allows us to perform long lasting tasks/background operations and show the result on the UI thread without affecting the main thread.
+	
 * What are the problems in asynctask?
 	- When the device configuration changes, the entire Activity is destroyed and recreated. When the Activity is restarted, your AsyncTask’s reference to the Activity is invalid, so onPostExecute() will have no effect on the new Activity.
 	- It is a misconception to think that just because the Activity that originally spawned the AsyncTask is dead, the AsyncTask is as well. It will continue running on its merry way even if you exit the entire application. The only way that an AsyncTask finishes early is if it is canceled via `AsyncTask.cancel()`. This means that you have to manage the cancellation of AsyncTasks yourself; otherwise you run the risk of bogging down your app with unnecessary background tasks, or of leaking memory.
@@ -1612,8 +1627,9 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 		- Any task where you want to control the CPU usage relative to the GUI thread
 
 * What is a `Loader`?
-	- A `Loader` make it easy to asynchronously load data in an activity or fragment They are available to every Activity and Fragment. They provide asynchronous loading of data. They monitor the source of their data and deliver new results when the content changes. They automatically reconnect to the last loader's cursor when being recreated after a configuration change. Thus, they don't need to re-query their data.
-
+	
+- A `Loader` make it easy to asynchronously load data in an activity or fragment They are available to every Activity and Fragment. They provide asynchronous loading of data. They monitor the source of their data and deliver new results when the content changes. They automatically reconnect to the last loader's cursor when being recreated after a configuration change. Thus, they don't need to re-query their data.
+	
 * What is the relationship between the life cycle of an `AsyncTask` and an `Activity`? What problems can this result in? How can these problems be avoided?
 	- An `AsyncTask` is not tied to the life cycle of the `Activity` that contains it. So, for example, if you start an `AsyncTask` inside an `Activity` and the user rotates the device, the `Activity` will be destroyed (and a new `Activity` instance will be created) but the `AsyncTask` will not die but instead goes on living until it completes. 
 	- Then, when the `AsyncTask` does complete, rather than updating the UI of the new `Activity`, it updates the former instance of the `Activity` (i.e., the one in which it was created but that is not displayed anymore!). This can lead to an Exception (of the type `java.lang.IllegalArgumentException`: View not attached to window manager if you use, for instance, `findViewById` to retrieve a view inside the `Activity`).
@@ -1666,7 +1682,7 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 			    public abstract UserDao userDao();
 			}
         ```
-        
+      
 		- Entity: Represents a table within the database.
 
         ```java
@@ -1714,6 +1730,7 @@ app:layout_constraintBottom_toBottomOf="@+id/view1"
 	```
 
 * How would you preserve `Activity` state during a screen rotation? [StackOverflow](https://stackoverflow.com/questions/3915952/how-to-save-state-during-orientation-change-in-android-if-the-state-is-made-of-m)
+	
 	- When orientation changes, Android destroys your current activity and creates a new activity again. And whenever Android destroys and recreates your Activity for orientation change, it calls onSaveInstanceState() before destroying and calls onCreate() after recreating. Whatever you save in the bundle in onSaveInstanceState, you can get back from the onCreate() parameter.
 * What are different ways to store data in your Android app?
 
@@ -1779,7 +1796,7 @@ Batch the network calls: You should batch the network calls if possible so that 
 	res/drawable-mdpi/my_icon.png        // bitmap for medium density
 	res/drawable-hdpi/my_icon.png        // bitmap for high density
 	res/drawable-xhdpi/my_icon.png       // bitmap for extra high density
-``` 
+```
 	- The following code in the Manifest supports all dpis.
 ```
 	<supports-screens android:smallScreens="true" 
@@ -1825,8 +1842,9 @@ Batch the network calls: You should batch the network calls if possible so that 
 #### Android System Internal
 
 * What is the Dalvik Virtual Machine?
-	- Dalvik is a discontinued process virtual machine (VM) in Google's Android operating system (while its bytecode format is still used as a distribution format, but no longer at runtime in newer Android) that executes applications written for Android.
-
+	
+- Dalvik is a discontinued process virtual machine (VM) in Google's Android operating system (while its bytecode format is still used as a distribution format, but no longer at runtime in newer Android) that executes applications written for Android.
+	
 * What is the difference JVM, DVM and ART?
 	- The Java virtual machine is a program whose purpose is to execute other programs. The JVM has two primary functions: to allow Java programs to run on any device or operating system (known as the "Write once, run anywhere" principle), and to manage and optimize program memory. 
 	- The Dalvik Virtual Machine (DVM) is an android virtual machine optimized for mobile devices. It optimizes the virtual machine for memory, battery life and performance.
@@ -1841,8 +1859,9 @@ Batch the network calls: You should batch the network calls if possible so that 
 * What are the differences between Dalvik and ART?
 
 * What is DEX?
-	- Android programs are compiled into .dex (Dalvik Executable) files, which are in turn zipped into a single .apk file on the device. .dex files can be created by automatically translating compiled applications written in the Java programming language.
-
+	
+- Android programs are compiled into .dex (Dalvik Executable) files, which are in turn zipped into a single .apk file on the device. .dex files can be created by automatically translating compiled applications written in the Java programming language.
+	
 * Can you manually call the Garbage collector?
 	- You can call Garbage collector using:
 
@@ -1868,21 +1887,25 @@ Batch the network calls: You should batch the network calls if possible so that 
 #### Others
 
 * Why Bundle class is used for data passing and why cannot we use simple Map data structure
-	- All the IPC communication in the Android framework is based upon the concept of Binders. And the main mechanism to allow data marshalling between those processes is based on Parcels. A Parcel is an optimised, non-general purpose serialisation mechanism that Android employs for IPC. Contrary to Serializable objects, you should never use Parcels for any kind of persistence. Whenever you see a Bundle, you’re dealing with a Parcel under the hood.
-
+	
+- All the IPC communication in the Android framework is based upon the concept of Binders. And the main mechanism to allow data marshalling between those processes is based on Parcels. A Parcel is an optimised, non-general purpose serialisation mechanism that Android employs for IPC. Contrary to Serializable objects, you should never use Parcels for any kind of persistence. Whenever you see a Bundle, you’re dealing with a Parcel under the hood.
+	
 * How do you troubleshoot a crashing application? 
-	- Reading a stack trace. The first step to fix a crash is to identify the place where it happens. You can use the stack trace available in the report details if you are using Play Console or the output of the logcat tool. If you don’t have a stack trace available, you should locally reproduce the crash, either by manually testing the app or by reaching out to affected users, and reproduce it while using logcat.
-
+	
+- Reading a stack trace. The first step to fix a crash is to identify the place where it happens. You can use the stack trace available in the report details if you are using Play Console or the output of the logcat tool. If you don’t have a stack trace available, you should locally reproduce the crash, either by manually testing the app or by reaching out to affected users, and reproduce it while using logcat.
+	
 * Explain Android notification system?
-	- A notification is a message that Android displays outside your app's UI to provide the user with reminders, communication from other people, or other timely information from your app. Users can tap the notification to open your app or take an action directly from the notification. 
-
+	
+- A notification is a message that Android displays outside your app's UI to provide the user with reminders, communication from other people, or other timely information from your app. Users can tap the notification to open your app or take an action directly from the notification. 
+	
 * What is the difference between Serializable and Parcelable? Which is the best approach in Android?
 
 * Have you developed widgets? Describe. [Mindorks](https://blog.mindorks.com/android-widgets-ad3d166458d3)
 
 * What is AAPT?
-	- AAPT stands for Android Asset Packaging Tool. This tool is part of the SDK (and build system) and allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.
-
+	
+- AAPT stands for Android Asset Packaging Tool. This tool is part of the SDK (and build system) and allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.
+	
 * What is the best way to update the screen periodically?
 
 * FlatBuffers vs JSON. [Mindorks](https://blog.mindorks.com/why-consider-flatbuffer-over-json-2e4aa8d4ed07)
@@ -1901,6 +1924,7 @@ Batch the network calls: You should batch the network calls if possible so that 
 	- SparseArray can be used to replace HashMap when the key is a primitive type. There are some variants for different key/value types, even though not all of them are publicly available. It's more memory efficient than Hashmap.
 
 * What are Annotations? [Mindorks](https://blog.mindorks.com/creating-custom-annotations-in-android-a855c5b43ed9), [Link](https://blog.mindorks.com/improve-your-android-coding-through-annotations-26b3273c137a)
+	
 	- An annotation is a form of syntactic metadata that can be added to Java source code. Classes, methods, variables, parameters and packages may be annotated. Like Javadoc tags, Java annotations can be read from source files. Unlike Javadoc tags, Java annotations can also be embedded in and read from class files generated by the compiler. This allows annotations to be retained by Java VM at run-time and read via reflection.
 	
 * How to handle multi-touch in android [GitHub](https://arjun-sna.github.io/android/2016/07/20/multi-touch-android/)
@@ -1923,8 +1947,9 @@ Batch the network calls: You should batch the network calls if possible so that 
 	```
 
 * What is the support library? Why was it introduced?[MartianCraft](http://martiancraft.com/blog/2015/06/android-support-library/)
-	- The Android Support Library was originally released in 2011 as the Android Compatibility Library. It provides newer APIs for older releases. It's indeed a collection of libraries that can roughly be divided into two groups: compatibility and component libraries.
-
+	
+- The Android Support Library was originally released in 2011 as the Android Compatibility Library. It provides newer APIs for older releases. It's indeed a collection of libraries that can roughly be divided into two groups: compatibility and component libraries.
+	
 * What is Android Data Binding? [Developer Android](https://developer.android.com/topic/libraries/data-binding/index.html)
 	- The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically. Layouts are often defined in activities with code that calls UI framework methods. For example, the code below calls findViewById() to find a TextView widget and bind it to the userName property of the viewModel variable:
 
@@ -2030,11 +2055,13 @@ Batch the network calls: You should batch the network calls if possible so that 
 		![MVP_DIAGRAM](https://d33ypg4xwx0n86.cloudfront.net/direct?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*VOr9hgXEmoTxyoyz.png&resize=w1408)
 
 * What is presenter?
-	- The Presenter and its corresponding View are created by the Activity. References to the View and to the TaskRepository - the Model - are given to the constructor of the Presenter. In the implementation of the constructor, the Presenter will call the setPresenter method of the View. This can be simplified when using a dependency injection framework that allows the injection of the Presenters in the corresponding views, reducing the coupling of the classes.
-
+	
+- The Presenter and its corresponding View are created by the Activity. References to the View and to the TaskRepository - the Model - are given to the constructor of the Presenter. In the implementation of the constructor, the Presenter will call the setPresenter method of the View. This can be simplified when using a dependency injection framework that allows the injection of the Presenters in the corresponding views, reducing the coupling of the classes.
+	
 * What is model?
-	- The Model works with the remote and local data sources to get and save the data. This is where the business logic is handled. For example, when requesting the list of Tasks, the Model would try to retrieve them from the local data source. If it is empty, it will query the network, save the response in the local data source and then return the list.
-
+	
+- The Model works with the remote and local data sources to get and save the data. This is where the business logic is handled. For example, when requesting the list of Tasks, the Model would try to retrieve them from the local data source. If it is empty, it will query the network, save the response in the local data source and then return the list.
+	
 * Describe MVC.
 	- Desgin pattern in which both the Controller and the View depend on the Model: the Controller to update the data, the View to get the data. But, most important for the desktop and Web devs at that time: the Model was separated and could be tested independently of the UI. Several variants of MVC appeared.
 
@@ -2045,8 +2072,9 @@ Batch the network calls: You should batch the network calls if possible so that 
 		![MVC_DIAGRAM](https://d33ypg4xwx0n86.cloudfront.net/direct?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*HFP--PRKvRXsS7fd.png&resize=w1408)
 
 * What is controller?
-	- Controllers process incoming requests, handle user input and interactions, and execute appropriate application logic.
-
+	
+- Controllers process incoming requests, handle user input and interactions, and execute appropriate application logic.
+	
 * Describe MVVM. [GitHub](https://github.com/MindorksOpenSource/android-mvvm-architecture)
 
 	- At a first glance, MVVM seems very similar to the Model-View-Presenter pattern, because both of them do a great job in abstracting the view’s state and behavior. The Presentation Model abstracts a View independent from a specific user-interface platform, whereas the MVVM pattern was created to simplify the event driven programming of user interfaces.
