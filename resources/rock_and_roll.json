@@ -4,6 +4,7 @@
         "title":"Sgt. Pepper's Lonely Hearts Club Band",
         "year":1967,
         "band":"The Beatles",
+        "description":"Sgt. Pepper's Lonely Hearts Club Band is the eighth studio album by the English rock band the Beatles. Released on 26 May 1967, it spent 27 weeks at number one on the Record Retailer chart in the United Kingdom and 15 weeks at number one on the Billboard Top LPs chart in the United States. It was lauded by critics for its innovations in songwriting, production and graphic design, for bridging a cultural divide between popular music and high art, and for reflecting the interests of contemporary youth and the counterculture. Its release was a defining moment in 1960s pop culture, heralding the Summer of Love, while the album's reception achieved full cultural legitimisation for pop music and recognition for the medium as a genuine art form.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/50/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg"
     },
     {
@@ -11,6 +12,7 @@
         "title":"Pet Sounds",
         "year":1966,
         "band":"The Beach Boys",
+        "description":"Pet Sounds is the eleventh studio album by the American rock band the Beach Boys, released May 16, 1966 on Capitol Records. It was initially met with a lukewarm critical and commercial response in the U.S., peaking at number 10 on Billboard's Top LPs chart. In the UK, the album was lauded by critics and reached number 2 on the Top 40 Albums Chart, remaining in the top ten for six months. Promoted there as \"the most progressive pop album ever\", Pet Sounds garnered recognition for its ambitious production, sophisticated music, and emotional lyric content. It is considered to be among the greatest and most influential albums in music history",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/bb/PetSoundsCover.jpg"
     },
     {
@@ -18,6 +20,7 @@
         "title":"What's Going On",
         "year":1971,
         "band":"Marvin Gaye",
+        "description":"What's Going On is the eleventh studio album by American soul singer, songwriter, and producer Marvin Gaye. It was released on May 21, 1971, by the Motown Records subsidiary label Tamla. Recorded between 1970 and 1971 in sessions at Hitsville U.S.A., Golden World, and United Sound Studios in Detroit, and at The Sound Factory in West Hollywood, California, it was Gaye's first album to credit him as a producer and to credit Motown's in-house studio band, the session musicians known as the Funk Brothers.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/84/MarvinGayeWhat%27sGoingOnalbumcover.jpg"
     },
     {
@@ -25,6 +28,7 @@
         "title":"Dark Side Of The Moon",
         "year":1973,
         "band":"Pink Floyd",
+        "description":"The Dark Side of the Moon is the eighth studio album by the English rock band Pink Floyd, released on 1 March 1973 by Harvest Records. Primarily developed during live performances, the band premiered an early version of the suite several months before recording began. The record was conceived as an album that focused on the pressures faced by the band during their arduous lifestyle, and dealing with the apparent mental health problems suffered by former band member Syd Barrett, who departed the group in 1968. New material was recorded in two sessions in 1972 and 1973 at Abbey Road Studios in London.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png"
     },
     {
@@ -32,13 +36,15 @@
         "title":"Revolver",
         "year":1966,
         "band":"The Beatles",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/1/16/Revolver.jpg"
+        "description":"Revolver is the seventh studio album by the English rock band the Beatles. It was released on 5 August 1966, accompanied by the double A-side single \"Eleanor Rigby\" / \"Yellow Submarine\". The album was the Beatles' final recording project before their retirement as live performers and marked the group's most overt use of studio technology to date, building on the advances of their late 1965 release Rubber Soul. It has since become regarded as one of the greatest and most innovative albums in the history of popular music, with recognition centred on its range of musical styles, diverse sounds, and lyrical content.",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/e/ec/Revolver_%28album_cover%29.jpg"
     },
     {
         "position":6,
         "title":"Live at the Apollo",
         "year":1963,
         "band":"James Brown",
+        "description":"Live at the Apollo is the first live album by James Brown and the Famous Flames, recorded at the Apollo Theater in Harlem and released in 1963 by King Records. The album is included in Robert Christgau's \"Basic Record Library\" of 1950s and 1960s recordings, published in Christgau's Record Guide: Rock Albums of the Seventies (1981). In 2000 it was voted number 248 in Colin Larkin's All Time Top 1000 Albums. In 2003, the album was ranked number 25 on Rolling Stone magazine's list of The 500 Greatest Albums of All Time, maintaining the rating in a 2012 revised list, and re-ranking at number 65 in a 2020 reboot of the list. In 2004, it was one of 50 recordings chosen that year by the Library of Congress to be added to the National Recording Registry.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/James_Brown-Live_at_the_Apollo_%28album_cover%29.jpg/220px-James_Brown-Live_at_the_Apollo_%28album_cover%29.jpg"
     },
     {
@@ -46,6 +52,7 @@
         "title":"Highway 61 Revisited",
         "year":1965,
         "band":"Bob Dylan",
+        "description":"Highway 61 Revisited is the sixth studio album by American singer-songwriter Bob Dylan, released on August 30, 1965, by Columbia Records. Having until then recorded mostly acoustic music, Dylan used rock musicians as his backing band on every track of the album, except for the closing track, the 11-minute ballad \"Desolation Row\". Critics have focused on the innovative way Dylan combined driving, blues-based music with the subtlety of poetry to create songs that captured the political and cultural chaos of contemporary America. Author Michael Gray has argued that, in an important sense, the 1960s \"started\" with this album.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/95/Bob_Dylan_-_Highway_61_Revisited.jpg"
     },
     {
@@ -53,6 +60,7 @@
         "title":"Thriller",
         "year":1982,
         "band":"Michael Jackson",
+        "description":"Thriller is the sixth studio album by American singer and songwriter Michael Jackson, released on November 30, 1982, by Epic Records. It was produced by Quincy Jones, who had previously worked with Jackson on his 1979 album Off the Wall. Jackson wanted to create an album where \"every song was a killer\". With the ongoing backlash against disco, he moved in a new musical direction, resulting in a mix of pop, post-disco, rock, funk, and R&B sounds. Thriller foreshadows the contradictory themes of Jackson's personal life, as he began using a motif of paranoia and darker themes. The album features a single guest appearance, with Paul McCartney becoming the first artist to be featured on one of Jackson's albums. Recording took place from April to November 1982 at Westlake Recording Studios in Los Angeles, with a production budget of $750,000.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"
     },
     {
@@ -60,6 +68,7 @@
         "title":"Are You Experienced?",
         "year":1967,
         "band":"Jimi Hendrix",
+        "description":"Are You Experienced is the debut studio album by the Jimi Hendrix Experience. Released in 1967, the LP was an immediate critical and commercial success, and it is widely regarded as one of the greatest debuts in the history of rock music. The album features Jimi Hendrix's innovative approach to songwriting and electric guitar playing which soon established a new direction in psychedelic and hard rock music.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/17/AreyouexpUK.jpg"
     },
     {
@@ -67,6 +76,7 @@
         "title":"Rubber Soul",
         "year":1965,
         "band":"The Beatles",
+        "description":"Rubber Soul is the sixth studio album by the English rock band the Beatles. It was released on 3 December 1965 in the United Kingdom, on EMI's Parlophone label, accompanied by the non-album double A-side single \"Day Tripper\" / \"We Can Work It Out\". The original North American release, issued by Capitol Records, contains ten of the fourteen songs and two tracks withheld from the band's Help! album. Rubber Soul met with a highly favourable critical response and topped sales charts in Britain and the United States for several weeks.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/74/Rubber_Soul.jpg"
     },
     {
@@ -74,6 +84,7 @@
         "title":"It Takes A Nation Of Millions To Hold Us Back",
         "year":1988,
         "band":"Public Enemy",
+        "description":"It Takes a Nation of Millions to Hold Us Back is the second studio album by American hip hop group Public Enemy, released on June 28, 1988, by Def Jam Recordings and Columbia Records. It was recorded from 1987 to 1988 in sessions at Chung King Studios, Greene St. Recording, and Sabella Studios in New York.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/73/PublicEnemyItTakesaNationofMillionstoHoldUsBack.jpg"
     },
     {
@@ -81,6 +92,7 @@
         "title":"Nevermind",
         "year":1991,
         "band":"Nirvana",
+        "description":"Nevermind is the second studio album by American rock band Nirvana, released on September 24, 1991, by DGC Records. It was Nirvana's first release on a major label and the first to feature drummer Dave Grohl. Produced by Butch Vig, Nevermind features a more polished, radio-friendly sound than the band's prior work. Recording took place at Sound City Studios in Van Nuys, California, and Smart Studios in Madison, Wisconsin in May and June 1991, with mastering being completed in August of that year at The Mastering Lab in Hollywood, California.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg"
     },
     {
@@ -88,6 +100,7 @@
         "title":"Elvis Presley",
         "year":1956,
         "band":"Elvis Presley",
+        "description":"Elvis Presley (released in the UK as Elvis Presley Rock n' Roll) is the debut album by American rock and roll singer Elvis Presley. It was released on RCA Victor, catalog number LPM-1254, on March 13, 1956. The recording sessions took place on January 10 and January 11 at the RCA Victor Studios in Nashville, Tennessee, and on January 30 and January 31 at the RCA Victor studios in New York. Additional material originated from sessions at Sun Studio in Memphis, Tennessee, on July 5, August 19 and September 10 of 1954, and on July 11, 1955.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f5/Elvis_Presley_LPM-1254_Album_Cover.jpg"
     },
     {
@@ -95,6 +108,7 @@
         "title":"Born To Run",
         "year":1975,
         "band":"Bruce Springsteen",
+        "description":"Born to Run is the third studio album by American singer-songwriter Bruce Springsteen, released on August 25, 1975, by Columbia Records. As his effort to break into the mainstream, the album was a commercial success, peaking at number three on the Billboard 200 and eventually selling six million copies in the United States. Two singles were released from the album: \"Born to Run\" and \"Tenth Avenue Freeze-Out\"; the first helped Springsteen to reach mainstream popularity. The tracks \"Thunder Road\", \"She's the One\", and \"Jungleland\" became staples of album-oriented rock radio and Springsteen concert high points.",
         "cover":"https://i.pinimg.com/originals/ee/cb/be/eecbbe9530795192cea4805fb967107b.jpg"
     },
     {
@@ -102,6 +116,7 @@
         "title":"Exile On Main Street",
         "year":1972,
         "band":"The Rolling Stones",
+        "description":"Exile on Main St. is the 10th British and 12th American studio album by the English rock band the Rolling Stones, released on 12 May 1972 by Rolling Stones Records. Recording began in 1969 in England during sessions for Sticky Fingers and continued in mid-1971 at a rented villa in the South of France named Nellcôte while the band lived abroad as tax exiles. A collage of various images, the album's artwork, according to frontman Mick Jagger, reflects the Rolling Stones as \"runaway outlaws using the blues as its weapon against the world\", showcasing \"feeling of joyful isolation, grinning in the face of a scary and unknown future\".",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6a/Pussy_Galore_-_Exile_on_Main_St.jpg"
     },
     {
@@ -109,6 +124,7 @@
         "title":"Blonde On Blonde",
         "year":1966,
         "band":"Bob Dylan",
+        "description":"Blonde on Blonde is the seventh studio album by American singer-songwriter Bob Dylan, released as a double album on June 20, 1966 by Columbia Records. Recording sessions began in New York in October 1965 with numerous backing musicians, including members of Dylan's live backing band, the Hawks. Though sessions continued until January 1966, they yielded only one track that made it onto the final album—\"One of Us Must Know (Sooner or Later)\". At producer Bob Johnston's suggestion, Dylan, keyboardist Al Kooper, and guitarist Robbie Robertson moved to the CBS studios in Nashville, Tennessee. These sessions, augmented by some of Nashville's top session musicians, were more fruitful, and in February and March all the remaining songs for the album were recorded.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
     },
     {
@@ -116,6 +132,7 @@
         "title":"Innervisions",
         "year":1973,
         "band":"Stevie Wonder",
+        "description":"Innervisions is the sixteenth studio album by American singer, songwriter and musician Stevie Wonder, released August 3, 1973, on the Tamla label for Motown Records, a landmark recording of his \"classic period\". It is also regarded as Wonder's transition from Little Stevie Wonder and romantic ballads to a more musically mature, conscious and grown-up artist. With Wonder being the first major artist to experiment with the revolutionary TONTO (The Original New Timbral Orchestra) synth, developed by Malcolm Cecil and Robert Margouleff, and the ARP synthesizer on a large scale, Innervisions became hugely influential on the subsequent future of commercial soul and black music.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3b/Steviewonder_innervisions.jpg"
     },
     {
@@ -123,6 +140,7 @@
         "title":"London Calling",
         "year":1979,
         "band":"The Clash",
+        "description":"London Calling is the third studio album by English rock band the Clash. It was originally released as a double album in the United Kingdom on 14 December 1979 by CBS Records, and in the United States in January 1980 by Epic Records.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/0/00/TheClashLondonCallingalbumcover.jpg/220px-TheClashLondonCallingalbumcover.jpg"
     },
     {
@@ -130,6 +148,7 @@
         "title":"Abbey Road",
         "year":1969,
         "band":"The Beatles",
+        "description":"Abbey Road is the eleventh studio album by the English rock band the Beatles, released on 26 September 1969 by Apple Records. Named after Abbey Road, London, the location of EMI Studios, the cover features the group walking across the street's zebra crossing, an image that became one of the most famous and imitated in popular music. The album's initially mixed reviews were contrasted by its immediate commercial success, topping record charts in the UK and US. The single \"Something\" / \"Come Together\" was released in October and topped the US charts.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
     },
     {
@@ -137,6 +156,7 @@
         "title":"Purple Rain",
         "year":1984,
         "band":"Prince",
+        "description":"Purple Rain is the sixth studio album by American recording artist Prince, released on June 25, 1984, by Warner Bros. Records and the soundtrack to the 1984 film of the same name. Purple Rain was musically denser than Prince's previous albums, emphasizing full band performances, and multiple layers of guitars, keyboards, electronic synthesizer effects, drum machines, and other instruments.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg"
     },
     {
@@ -144,6 +164,7 @@
         "title":"Who's Next",
         "year":1971,
         "band":"The Who",
+        "description":"Who's Next is the fifth studio album by English rock band the Who. It developed from the aborted Lifehouse project, a multi-media rock opera written by the group's guitarist Pete Townshend as a follow-up to the band's 1969 album Tommy. The project was cancelled owing to its complexity and to conflicts with Kit Lambert, the band's manager, but the group salvaged some of the songs, without the connecting story elements, to release as their next album. Eight of the nine songs on Who's Next were from Lifehouse, the lone exception being the John Entwistle-penned \"My Wife\". Ultimately, the remaining Lifehouse tracks would all be released on other albums throughout the next decade.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Whosnext.jpg/220px-Whosnext.jpg"
     },
     {
@@ -151,6 +172,7 @@
         "title":"Led Zeppelin II",
         "year":1969,
         "band":"Led Zeppelin",
+        "description":"Led Zeppelin II is the second studio album by the English rock band Led Zeppelin, released on 22 October 1969 in the United States and on 31 October 1969 in the United Kingdom by Atlantic Records. Recording sessions for the album took place at several locations in both the United Kingdom and North America from January to August 1969. The album's production was credited to the band's lead guitarist and songwriter Jimmy Page, and it was also Led Zeppelin's first album on which Eddie Kramer served as engineer.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/20/Led_Zeppelin_-_Led_Zeppelin_II.jpg"
     },
     {
@@ -158,6 +180,7 @@
         "title":"Songs In The Key Of Life",
         "year":1976,
         "band":"Stevie Wonder",
+        "description":"Songs in the Key of Life is the eighteenth studio album by American singer, songwriter and musician Stevie Wonder. It was released on September 28, 1976, by Tamla Records, a division of Motown. The double album has been regarded by music journalists as the culmination of Wonder's \"classic period\" of recording. The album was recorded primarily at Crystal Sound studio in Hollywood, with some sessions recorded at the Record Plant in Hollywood, the Record Plant in Sausalito, and The Hit Factory in New York City; final mixing was conducted at Crystal Sound.",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e2/Songs_in_the_key_of_life.jpg"
     },
     {
@@ -165,6 +188,7 @@
         "title":"The Joshua Tree",
         "year":1987,
         "band":"U2",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6b/The_Joshua_Tree.png"
     },
     {
@@ -172,6 +196,7 @@
         "title":"Rumours",
         "year":1977,
         "band":"Fleetwood Mac",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"
     },
     {
@@ -179,6 +204,7 @@
         "title":"The Beatles (The White Album)",
         "year":1968,
         "band":"The Beatles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/commons/2/20/TheBeatles68LP.jpg"
     },
     {
@@ -186,6 +212,7 @@
         "title":"I Never Loved A Man the Way I Love You",
         "year":1967,
         "band":"Aretha Franklin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/15/Aretha_Franklin_%E2%80%93_I_Never_Loved_a_Man_the_Way_I_Love_You.jpg"
     },
     {
@@ -193,6 +220,7 @@
         "title":"Modern Sounds in Country and Western Music",
         "year":1962,
         "band":"Ray Charles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/74/ModernSoundsInC%26WMusic.jpg"
     },
     {
@@ -200,6 +228,7 @@
         "title":"Blue",
         "year":1971,
         "band":"Joni Mitchell",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg"
     },
     {
@@ -207,6 +236,7 @@
         "title":"Tapestry",
         "year":1971,
         "band":"Carole King",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Carole_King_-_Tapestry.jpg"
     },
     {
@@ -214,6 +244,7 @@
         "title":"Raising Hell",
         "year":1986,
         "band":"Run-D.M.C.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/93/Raising_Hell_%28Run_DMC_album_-_cover_art%29.jpg"
     },
     {
@@ -221,6 +252,7 @@
         "title":"Tommy",
         "year":1969,
         "band":"The Who",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/19/Tommyalbumcover.jpg"
     },
     {
@@ -228,6 +260,7 @@
         "title":"Led Zeppelin IV",
         "year":1971,
         "band":"Led Zeppelin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
     },
     {
@@ -235,6 +268,7 @@
         "title":"The Velvet Underground & Nico",
         "year":1967,
         "band":"The Velvet Underground",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/0c/Velvet_Underground_and_Nico.jpg"
     },
     {
@@ -242,6 +276,7 @@
         "title":"Appetite For Destruction",
         "year":1987,
         "band":"Guns N' Roses",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg"
     },
     {
@@ -249,6 +284,7 @@
         "title":"Paranoid",
         "year":1970,
         "band":"Black Sabbath",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/64/Black_Sabbath_-_Paranoid.jpg"
     },
     {
@@ -256,6 +292,7 @@
         "title":"There's A Riot Goin' On",
         "year":1971,
         "band":"Sly & The Family Stone",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Slyfam-riot1.jpg/220px-Slyfam-riot1.jpg"
     },
     {
@@ -263,6 +300,7 @@
         "title":"Ziggy Stardust",
         "year":1972,
         "band":"David Bowie",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/01/ZiggyStardust.jpg"
     },
     {
@@ -270,6 +308,7 @@
         "title":"Let It Bleed",
         "year":1969,
         "band":"The Rolling Stones",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/LetitbleedRS.jpg/220px-LetitbleedRS.jpg"
     },
     {
@@ -277,6 +316,7 @@
         "title":"Bringing It All Back Home",
         "year":1965,
         "band":"Bob Dylan",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Bob_Dylan_-_Bringing_It_All_Back_Home.jpg/220px-Bob_Dylan_-_Bringing_It_All_Back_Home.jpg"
     },
     {
@@ -284,6 +324,7 @@
         "title":"Goodbye Yellow Brick Road",
         "year":1973,
         "band":"Elton John",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/86/Elton_John_-_Goodbye_Yellow_Brick_Road.jpg"
     },
     {
@@ -291,6 +332,7 @@
         "title":"Saturday Night Fever Soundtrack",
         "year":1977,
         "band":"Various Artists",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/0c/TheBeeGeesSaturdayNightFeveralbumcover.jpg"
     },
     {
@@ -298,6 +340,7 @@
         "title":"Ten",
         "year":1991,
         "band":"Pearl Jam",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2d/PearlJam-Ten2.jpg"
     },
     {
@@ -305,6 +348,7 @@
         "title":"Led Zeppelin I",
         "year":1969,
         "band":"Led Zeppelin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png/220px-Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png"
     },
     {
@@ -312,6 +356,7 @@
         "title":"The Doors",
         "year":1967,
         "band":"The Doors",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/98/TheDoorsTheDoorsalbumcover.jpg"
     },
     {
@@ -319,6 +364,7 @@
         "title":"Superfly",
         "year":1972,
         "band":"Curtis Mayfield",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/26/CurtisMayfieldSuperfly.jpg"
     },
     {
@@ -326,6 +372,7 @@
         "title":"The Miseducation of Lauryn Hill",
         "year":1998,
         "band":"Lauryn Hill",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/55/LaurynHillTheMiseducationofLaurynHillalbumcover.jpg"
     },
     {
@@ -333,6 +380,7 @@
         "title":"Back In Black",
         "year":1980,
         "band":"AC/DC",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
     },
     {
@@ -340,6 +388,7 @@
         "title":"Born in the USA",
         "year":1984,
         "band":"Bruce Springsteen",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/31/BruceBorn1984.JPG"
     },
     {
@@ -347,6 +396,7 @@
         "title":"Licensed to Ill",
         "year":1986,
         "band":"Beastie Boys",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/5c/Licensed_to_ill.jpg"
     },
     {
@@ -354,6 +404,7 @@
         "title":"Never Mind the Bollocks",
         "year":1977,
         "band":"The Sex Pistols",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/4c/Never_Mind_the_Bollocks%2C_Here%27s_the_Sex_Pistols.png"
     },
     {
@@ -361,6 +412,7 @@
         "title":"Talking Book",
         "year":1972,
         "band":"Stevie Wonder",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/25/Talking_Book.jpg"
     },
     {
@@ -368,6 +420,7 @@
         "title":"Lady Soul",
         "year":1968,
         "band":"Aretha Franklin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/17/ArethaFranklinLadySoul.jpg"
     },
     {
@@ -375,6 +428,7 @@
         "title":"Sign O' The Times",
         "year":1987,
         "band":"Prince",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Prince-SignOTheTimes.jpg/220px-Prince-SignOTheTimes.jpg"
     },
     {
@@ -382,6 +436,7 @@
         "title":"The Ramones",
         "year":1976,
         "band":"The Ramones",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/bb/Ramones_-_Ramones_cover.jpg"
     },
     {
@@ -389,13 +444,15 @@
         "title":"Otis Blue",
         "year":1965,
         "band":"Otis Redding",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/a/a0/Otisblue.jpeg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/4/45/Otis_Blue.jpg"
     },
     {
         "position":57,
         "title":"Straight Outta Compton",
         "year":1989,
         "band":"N.W.A",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/84/StraightOuttaComptonN.W.A..jpg"
     },
     {
@@ -403,6 +460,7 @@
         "title":"Moondance",
         "year":1970,
         "band":"Van Morrison",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/ae/VanMorrisonMoondance.jpg"
     },
     {
@@ -410,6 +468,7 @@
         "title":"After the Goldrush",
         "year":1970,
         "band":"Neil Young",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2d/After_the_Gold_Rush.jpg"
     },
     {
@@ -417,6 +476,7 @@
         "title":"The Chronic",
         "year":1992,
         "band":"Dr. Dre",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/19/Dr.DreTheChronic.jpg"
     },
     {
@@ -424,6 +484,7 @@
         "title":"The Wall",
         "year":1979,
         "band":"Pink Floyd",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/cb/PinkFloydAnotherBrickCover.jpg"
     },
     {
@@ -431,6 +492,7 @@
         "title":"Hotel California",
         "year":1976,
         "band":"The Eagles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/49/Hotelcalifornia.jpg"
     },
     {
@@ -438,6 +500,7 @@
         "title":"Van Halen",
         "year":1978,
         "band":"Van Halen",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/0d/Van_Halen_album.jpg"
     },
     {
@@ -445,6 +508,7 @@
         "title":"Electric Ladyland",
         "year":1968,
         "band":"Jimi Hendrix",
+        "description":"",
         "cover":"https://vignette.wikia.nocookie.net/jimihendrix/images/b/b0/ElectricLadylandUS.jpg/revision/latest/scale-to-width-down/340?cb=20080520184701"
     },
     {
@@ -452,13 +516,15 @@
         "title":"Ok Computer",
         "year":1997,
         "band":"Radiohead",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/a/a1/Radiohead.okcomputer.albumart.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png"
     },
     {
         "position":66,
         "title":"Automatic for the People",
         "year":1992,
         "band":"R.E.M.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/85/R.E.M._-_Automatic_for_the_People.jpg"
     },
     {
@@ -466,6 +532,7 @@
         "title":"Blood On the Tracks",
         "year":1975,
         "band":"Bob Dylan",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/fa/Bob_Dylan_-_Blood_on_the_Tracks.jpg"
     },
     {
@@ -473,6 +540,7 @@
         "title":"Bridge Over Troubled Water",
         "year":1970,
         "band":"Simon & Garfunkel",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/41/Simon_and_Garfunkel%2C_Bridge_over_Troubled_Water_%281970%29.png"
     },
     {
@@ -480,6 +548,7 @@
         "title":"Murmur",
         "year":1983,
         "band":"R.E.M.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c0/R.E.M._-_Murmur.jpg"
     },
     {
@@ -487,6 +556,7 @@
         "title":"Like A Virgin",
         "year":1984,
         "band":"Madonna",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/17/LikeAVirgin1984.png"
     },
     {
@@ -494,6 +564,7 @@
         "title":"A Hard Day's Night",
         "year":1964,
         "band":"The Beatles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e6/HardDayUK.jpg"
     },
     {
@@ -501,6 +572,7 @@
         "title":"Off the Wall",
         "year":1979,
         "band":"Michael Jackson",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f6/Off_the_wall.jpg"
     },
     {
@@ -508,6 +580,7 @@
         "title":"Achtung Baby",
         "year":1991,
         "band":"U2",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/72/Achtung_Baby.png"
     },
     {
@@ -515,6 +588,7 @@
         "title":"The Band",
         "year":1969,
         "band":"The Band",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/74/The_Band_%28album%29_coverart.jpg"
     },
     {
@@ -522,6 +596,7 @@
         "title":"Stand!",
         "year":1969,
         "band":"Sly & The Family Stone",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Stand-slyfam.jpg/220px-Stand-slyfam.jpg"
     },
     {
@@ -529,6 +604,7 @@
         "title":"From Elvis In Memphis",
         "year":1969,
         "band":"Elvis Presely",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/6/60/ElvisinMemphis.jpg/220px-ElvisinMemphis.jpg"
     },
     {
@@ -536,6 +612,7 @@
         "title":"Metallica (The Black Album)",
         "year":1991,
         "band":"Metallica",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2c/Metallica_-_Metallica_cover.jpg"
     },
     {
@@ -543,13 +620,15 @@
         "title":"Sticky Fingers",
         "year":1971,
         "band":"The Rolling Stones",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/9/99/RSSF71.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/5/57/The_Rolling_Stones_-_Sticky_Fingers.png"
     },
     {
         "position":79,
         "title":"Synchronicity",
         "year":1983,
         "band":"The Police",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/7f/Police-album-synchronicity.jpg"
     },
     {
@@ -557,13 +636,15 @@
         "title":"1999",
         "year":1982,
         "band":"Prince",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/c/cb/1999_cover.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/9/9c/Prince_-1999.jpg"
     },
     {
         "position":81,
         "title":"21",
         "year":2011,
         "band":"Adele",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Adele_-_21.png/220px-Adele_-_21.png"
     },
     {
@@ -571,6 +652,7 @@
         "title":"Paul's Boutique",
         "year":1989,
         "band":"Beastie Boys",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/07/BeastieBoysPaul%27sBoutique.jpg"
     },
     {
@@ -578,6 +660,7 @@
         "title":"Astral Weeks",
         "year":1968,
         "band":"Van Morrison",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f7/VanMorrisonAstralWeeks.jpg"
     },
     {
@@ -585,6 +668,7 @@
         "title":"Number Of the Beast",
         "year":1982,
         "band":"Iron Maiden",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/32/IronMaiden_NumberOfBeast.jpg"
     },
     {
@@ -592,6 +676,7 @@
         "title":"Machine Head",
         "year":1972,
         "band":"Deep Purple",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/00/Machine_Head_album_cover.jpg"
     },
     {
@@ -599,6 +684,7 @@
         "title":"Surrealistic Pillow",
         "year":1967,
         "band":"Jefferson Airplane",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/58/Jeffair.jpg"
     },
     {
@@ -606,6 +692,7 @@
         "title":"Master Of Puppets",
         "year":1986,
         "band":"Metallica",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg"
     },
     {
@@ -613,6 +700,7 @@
         "title":"The Clash",
         "year":1977,
         "band":"The Clash",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/9a/The_Clash_UK.jpg"
     },
     {
@@ -620,6 +708,7 @@
         "title":"Remain In Light",
         "year":1980,
         "band":"Talking Heads",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2d/TalkingHeadsRemaininLight.jpg"
     },
     {
@@ -627,6 +716,7 @@
         "title":"Plastic Ono Band",
         "year":1970,
         "band":"John Lennon",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/ab/Yoko_Ono_POB.jpg"
     },
     {
@@ -634,6 +724,7 @@
         "title":"Black Sabbath",
         "year":1970,
         "band":"Black Sabbath",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/d/da/Black_Sabbath_debut_album.jpg"
     },
     {
@@ -641,6 +732,7 @@
         "title":"3 Feet High and Rising",
         "year":1989,
         "band":"De La Soul",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/5a/DeLaSoul3FeetHighandRisingalbumcover.jpg"
     },
     {
@@ -648,6 +740,7 @@
         "title":"Catch A Fire",
         "year":1973,
         "band":"Bob Marley & The Wailers",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Thewailerscatchafire.jpg/220px-Thewailerscatchafire.jpg"
     },
     {
@@ -655,6 +748,7 @@
         "title":"The Queen Is Dead",
         "year":1986,
         "band":"The Smiths",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/ed/The-Queen-is-Dead-cover.png"
     },
     {
@@ -662,6 +756,7 @@
         "title":"The 'Chirping' Crickets",
         "year":1957,
         "band":"Buddy Holly",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Chirping_Crickets.jpg/220px-Chirping_Crickets.jpg"
     },
     {
@@ -669,6 +764,7 @@
         "title":"Live At Leeds",
         "year":1970,
         "band":"The Who",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/30/The_who_live_at_leeds.jpg"
     },
     {
@@ -676,6 +772,7 @@
         "title":"good kid, M.A.D.D. city",
         "year":2012,
         "band":"Kendrick Lamar",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/93/KendrickGKMC.jpg"
     },
     {
@@ -683,6 +780,7 @@
         "title":"Paid In Full",
         "year":1987,
         "band":"Eric B. & Rakim",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e1/RakimPIF.jpg"
     },
     {
@@ -690,6 +788,7 @@
         "title":"Music From Big Pink",
         "year":1968,
         "band":"The Band",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/a9/Bigpink.jpg"
     },
     {
@@ -697,6 +796,7 @@
         "title":"Fullfillingness' First Finale",
         "year":1974,
         "band":"Stevie Wonder",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/20/Fulfillingness%27_First_Finale.jpg"
     },
     {
@@ -704,6 +804,7 @@
         "title":"Disraeli Gears",
         "year":1967,
         "band":"Cream",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/cb/DisraeliGears.jpg"
     },
     {
@@ -711,6 +812,7 @@
         "title":"Axis Bold As Love",
         "year":1967,
         "band":"Jimi Hendrix",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Axiscover.jpg/220px-Axiscover.jpg"
     },
     {
@@ -718,6 +820,7 @@
         "title":"A Night At The Opera",
         "year":1975,
         "band":"Queen",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/4d/Queen_A_Night_At_The_Opera.png"
     },
     {
@@ -725,6 +828,7 @@
         "title":"DéjàVu",
         "year":1970,
         "band":"Crosby, Stills, Nash, & Young",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/90/Crosby%2C_Stills%2C_Nash_%26_Young_-_Deja_Vu.jpg"
     },
     {
@@ -732,6 +836,7 @@
         "title":"Harvest",
         "year":1972,
         "band":"Neil Young",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/9b/NeilYoungHarvestalbumcover.jpg"
     },
     {
@@ -739,6 +844,7 @@
         "title":"Freewheelin' Bob Dylan",
         "year":1963,
         "band":"Bob Dylan",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/d/d6/Bob_Dylan_-_The_Freewheelin%27_Bob_Dylan.jpg"
     },
     {
@@ -746,6 +852,7 @@
         "title":"Beggar's Banquet",
         "year":1968,
         "band":"The Rolling Stones",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Beggar_Banquet.jpg/220px-Beggar_Banquet.jpg"
     },
     {
@@ -753,6 +860,7 @@
         "title":"In The Court Of The Crimson King",
         "year":1969,
         "band":"King Crimson",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/8/84/In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg/220px-In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg"
     },
     {
@@ -760,6 +868,7 @@
         "title":"Imagine",
         "year":1971,
         "band":"John Lennon",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/69/ImagineCover.jpg"
     },
     {
@@ -767,6 +876,7 @@
         "title":"Sweetheart of the Rodeo",
         "year":1968,
         "band":"The Byrds",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/ed/TheByrdsSweetheartoftheRodeo.jpg"
     },
     {
@@ -774,6 +884,7 @@
         "title":"Horses",
         "year":1975,
         "band":"Patti Smith",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/88/PattiSmithHorses.jpg"
     },
     {
@@ -781,6 +892,7 @@
         "title":"Days Of Future Passed",
         "year":1967,
         "band":"The Moody Blues",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c2/TheMoodyBlues-album-daysoffuturepassed.jpg"
     },
     {
@@ -788,6 +900,7 @@
         "title":"Like A Prayer",
         "year":1989,
         "band":"Madonna",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/08/Madonna_-_Like_a_Prayer_album.png"
     },
     {
@@ -795,6 +908,7 @@
         "title":"Here's Little Richard",
         "year":1957,
         "band":"Little Richard",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c0/Hereslittlerichard.jpeg"
     },
     {
@@ -802,6 +916,7 @@
         "title":"Jagged Little Pill",
         "year":1995,
         "band":"Alanis Morissette",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/47/Alanis_Morissette_-_Jagged_Little_Pill.jpg"
     },
     {
@@ -809,6 +924,7 @@
         "title":"Kick Out The Jams",
         "year":1969,
         "band":"The MC5",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/d/dc/MC5_-_Kick_Out_the_Jams.jpg"
     },
     {
@@ -816,6 +932,7 @@
         "title":"All Things Must Pass",
         "year":1970,
         "band":"George Harrison",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/a1/All_Things_Must_Pass_1970_cover.jpg"
     },
     {
@@ -823,6 +940,7 @@
         "title":"Dookie",
         "year":1994,
         "band":"Green Day",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/4b/Green_Day_-_Dookie_cover.jpg"
     },
     {
@@ -830,6 +948,7 @@
         "title":"Hot Buttered Soul",
         "year":1969,
         "band":"Issac Hayes",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/8/86/Isaac_Hayes%2C_Hot_Buttered_Soul_Album_Cover.jpg"
     },
     {
@@ -837,13 +956,15 @@
         "title":"If You Can Believe Your Eyes and Ears",
         "year":1966,
         "band":"The Mamas & The Papas",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/e/e4/TheMamasAndThePapas-IfYouCanBelieveYourEyesAndEars.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/6/61/The_Mamas_%26_the_Papas_-_If_You_Can_Believe_Your_Eyes_and_Ears.png"
     },
     {
         "position":121,
         "title":"Let's Get It On",
         "year":1973,
         "band":"Marvin Gaye",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Let%27s_Get_It_On.jpg/220px-Let%27s_Get_It_On.jpg"
     },
     {
@@ -851,6 +972,7 @@
         "title":"Live at the Fillmore East",
         "year":1971,
         "band":"The Allman Brothers Band",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2c/AllmanBrothersBandAtFillmoreEast.jpg"
     },
     {
@@ -858,6 +980,7 @@
         "title":"Fresh",
         "year":1973,
         "band":"Sly & The Family Stone",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/73/Slyfamstone-fresh.jpg"
     },
     {
@@ -865,6 +988,7 @@
         "title":"My Aim Is True",
         "year":1977,
         "band":"Elvis Costello",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f5/MyAim_isTrue.jpg"
     },
     {
@@ -872,6 +996,7 @@
         "title":"Something Else",
         "year":1968,
         "band":"The Kinks",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/SomethingElseKinksCover.jpg/220px-SomethingElseKinksCover.jpg"
     },
     {
@@ -879,6 +1004,7 @@
         "title":"Captain Fantastic & The Brown Dirt Cowboy",
         "year":1975,
         "band":"Elton John",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/16/Elton_John_-_Captain_Fantastic_and_the_Brown_Dirt_Cowboy.jpg"
     },
     {
@@ -886,6 +1012,7 @@
         "title":"The Beach Boys Today!",
         "year":1965,
         "band":"The Beach Boys",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/3/33/BeachBoysTodayCover.jpg/220px-BeachBoysTodayCover.jpg"
     },
     {
@@ -893,6 +1020,7 @@
         "title":"Abraxas",
         "year":1970,
         "band":"Santana",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c4/SantanaAbraxas.jpg"
     },
     {
@@ -900,6 +1028,7 @@
         "title":"Low",
         "year":1978,
         "band":"David Bowie",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/93/Low_%28album%29.jpg"
     },
     {
@@ -907,6 +1036,7 @@
         "title":"Rock Around The Clock",
         "year":1956,
         "band":"Bill Haley & His Comets",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/cd/Bhratc.jpg"
     },
     {
@@ -914,6 +1044,7 @@
         "title":"Graceland",
         "year":1986,
         "band":"Paul Simon",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Graceland_cover_-_Paul_Simon.jpg/220px-Graceland_cover_-_Paul_Simon.jpg"
     },
     {
@@ -921,6 +1052,7 @@
         "title":"Radio",
         "year":1985,
         "band":"LL Cool J",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3f/Radio_LLcoolJ.jpg"
     },
     {
@@ -928,6 +1060,7 @@
         "title":"Fun House",
         "year":1970,
         "band":"Iggy Pop & The Stooges",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6d/StoogesFunHouse.jpg"
     },
     {
@@ -935,6 +1068,7 @@
         "title":"Ray Charles at Newport",
         "year":1958,
         "band":"Ray Charles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/5/58/RayCharlesatNewport.jpg/220px-RayCharlesatNewport.jpg"
     },
     {
@@ -942,6 +1076,7 @@
         "title":"The Marshall Mathers LP",
         "year":2000,
         "band":"Eminem",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg"
     },
     {
@@ -949,6 +1084,7 @@
         "title":"Marquee Moon",
         "year":1977,
         "band":"Television",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/af/Marquee_moon_album_cover.jpg"
     },
     {
@@ -956,6 +1092,7 @@
         "title":"The Stone Roses",
         "year":1989,
         "band":"The Stone Roses",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/ff/Stoneroses.jpg"
     },
     {
@@ -963,6 +1100,7 @@
         "title":"Cosmo's Factory",
         "year":1970,
         "band":"Creedence Clearwater Revival",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/42/Creedence_Clearwater_Revival_-_Cosmo%27s_Factory.jpg"
     },
     {
@@ -970,6 +1108,7 @@
         "title":"Doolittle",
         "year":1989,
         "band":"Pixies",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6b/Pixies-Doolittle.jpg"
     },
     {
@@ -977,6 +1116,7 @@
         "title":"Stankonia",
         "year":2000,
         "band":"OutKast",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/0b/OutKast_-_Stankonia.JPG"
     },
     {
@@ -984,6 +1124,7 @@
         "title":"   ",
         "year":1967,
         "band":"Love",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c8/Love_-_forever_changes.jpg"
     },
     {
@@ -991,6 +1132,7 @@
         "title":"Sweet Baby James",
         "year":1970,
         "band":"James Taylor",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/1/12/James_Taylor_-_Sweet_Baby_James.jpg/220px-James_Taylor_-_Sweet_Baby_James.jpg"
     },
     {
@@ -998,6 +1140,7 @@
         "title":"Run D.M.C.",
         "year":1984,
         "band":"Run-D.M.C.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/0/0d/Run-D.M.C..jpg"
     },
     {
@@ -1005,6 +1148,7 @@
         "title":"Call Me",
         "year":1973,
         "band":"Al Green",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f1/AlGreenCallMe.jpg"
     },
     {
@@ -1012,6 +1156,7 @@
         "title":"Freak Out!",
         "year":1966,
         "band":"Frank Zappa & The Mothers Of Invention",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/7/79/FreakOut%21.jpg/220px-FreakOut%21.jpg"
     },
     {
@@ -1019,6 +1164,7 @@
         "title":"One Nation Under A Groove",
         "year":1978,
         "band":"Funkadelic",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/19/Funkadelic_-_One_Nation_Under_a_Groove.jpg"
     },
     {
@@ -1026,6 +1172,7 @@
         "title":"At Last",
         "year":1961,
         "band":"Etta James",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/fd/At_Last_-_Etta_James.jpg"
     },
     {
@@ -1033,6 +1180,7 @@
         "title":"Pearl",
         "year":1971,
         "band":"Janis Joplin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/61/Janis_Joplin-Pearl_%28album_cover%29.jpg"
     },
     {
@@ -1040,6 +1188,7 @@
         "title":"Blood Sugar Sex Magik",
         "year":1991,
         "band":"Red Hot Chili Peppers",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/5e/RHCP-BSSM.jpg"
     },
     {
@@ -1047,6 +1196,7 @@
         "title":"Layla",
         "year":1970,
         "band":"Derek & The Dominos",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/a7/LaylaCover.jpg"
     },
     {
@@ -1054,6 +1204,7 @@
         "title":"Ready to Die",
         "year":1994,
         "band":"Notorious B.I.G.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/97/Ready_To_Die.jpg"
     },
     {
@@ -1061,6 +1212,7 @@
         "title":"Bad",
         "year":1987,
         "band":"Michael Jackson",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/51/Michael_Jackson_-_Bad.png"
     },
     {
@@ -1068,6 +1220,7 @@
         "title":"Back to Black",
         "year":2006,
         "band":"Amy Winehouse",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/67/Amy_Winehouse_-_Back_to_Black_%28album%29.png"
     },
     {
@@ -1075,6 +1228,7 @@
         "title":"Surfin U.S.A.",
         "year":1963,
         "band":"The Beach Boys",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/67/Surfin%27USACover.jpg"
     },
     {
@@ -1082,6 +1236,7 @@
         "title":"Court and Spark",
         "year":1974,
         "band":"Joni Mitchell",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Courtandspark.jpeg/220px-Courtandspark.jpeg"
     },
     {
@@ -1089,6 +1244,7 @@
         "title":"Physical Graffiti",
         "year":1975,
         "band":"Led Zeppelin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg"
     },
     {
@@ -1096,13 +1252,15 @@
         "title":"Parallel Lines",
         "year":1978,
         "band":"Blondie",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Blondie_-_Parallel_Lines.jpg/220px-Blondie_-_Parallel_Lines.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/4/48/Blondie_-_Parallel_Lines.png"
     },
     {
         "position":158,
         "title":"The Piper at the Gates of Dawn",
         "year":1967,
         "band":"Pink Floyd",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3c/PinkFloyd-album-piperatthegatesofdawn_300.jpg"
     },
     {
@@ -1110,6 +1268,7 @@
         "title":"Cheap Thrills",
         "year":1968,
         "band":"Big Brother & the Holding Co.",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/9e/Cheapthrills.jpeg"
     },
     {
@@ -1117,6 +1276,7 @@
         "title":"(What's the Story) Morning Glory",
         "year":1995,
         "band":"Oasis",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Oasis_-_%28What%27s_The_Story%29_Morning_Glory_album_cover.jpg/220px-Oasis_-_%28What%27s_The_Story%29_Morning_Glory_album_cover.jpg"
     },
     {
@@ -1124,6 +1284,7 @@
         "title":"Maggot Brain",
         "year":1971,
         "band":"Funkadelic",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/9a/Maggot_Brain_%28Funkadelic_album_-_cover_art%29.jpg"
     },
     {
@@ -1131,6 +1292,7 @@
         "title":"Darkness on the Edge of Town",
         "year":1978,
         "band":"Bruce Springsteen",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/a/af/BruceSpringsteenDarknessontheEdgeofTown.jpg"
     },
     {
@@ -1138,6 +1300,7 @@
         "title":"CrazySexyCool",
         "year":1994,
         "band":"TLC",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/5b/TLC_-_CrazySexyCool_album_cover.png"
     },
     {
@@ -1145,6 +1308,7 @@
         "title":"Babel",
         "year":2012,
         "band":"Mumford & Sons",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/62/Babelcoverart.jpg"
     },
     {
@@ -1152,6 +1316,7 @@
         "title":"Band On The Run",
         "year":1973,
         "band":"Paul McCartney/Wings",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f4/Paul_McCartney_%26_Wings-Band_on_the_Run_album_cover.jpg"
     },
     {
@@ -1159,6 +1324,7 @@
         "title":"Bo Diddley",
         "year":1958,
         "band":"Bo Diddley",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e8/BoDiddleyDebutAlbumCover.jpg"
     },
     {
@@ -1166,6 +1332,7 @@
         "title":"The Score",
         "year":1996,
         "band":"Fugees",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/d/df/Fugees_-_The_Score.png"
     },
     {
@@ -1173,6 +1340,7 @@
         "title":"Exodus",
         "year":1977,
         "band":"Bob Marley & the Wailers",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/b8/Bob_Marley_and_the_Wailers_-_Exodus.png"
     },
     {
@@ -1180,6 +1348,7 @@
         "title":"The Who Sell Out",
         "year":1967,
         "band":"The Who",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/98/The_who_sell_out_album_front.jpg"
     },
     {
@@ -1187,6 +1356,7 @@
         "title":"Going To A Go-Go",
         "year":1965,
         "band":"Smokey Robinson & The Miracles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/7a/Miraclesgoingtoagogo.jpg"
     },
     {
@@ -1194,6 +1364,7 @@
         "title":"Aqualung",
         "year":1971,
         "band":"Jethro Tull",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/19/JethroTullAqualungalbumcover.jpg"
     },
     {
@@ -1201,6 +1372,7 @@
         "title":"The Low End Theory",
         "year":1991,
         "band":"A Tribe Called Quest",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/42/ATribeCalledQuestTheLowEndtheory.jpg"
     },
     {
@@ -1208,6 +1380,7 @@
         "title":"Mr. Tambourine Man",
         "year":1965,
         "band":"The Byrds",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/2d/Byrds-MrTambourineMan.jpg"
     },
     {
@@ -1215,6 +1388,7 @@
         "title":"Illmatic",
         "year":1994,
         "band":"Nas",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/2/27/IllmaticNas.jpg"
     },
     {
@@ -1222,6 +1396,7 @@
         "title":"Fear Of A Black Planet",
         "year":1990,
         "band":"Public Enemy",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6c/Fear_of_a_Black_Planet.jpg"
     },
     {
@@ -1229,6 +1404,7 @@
         "title":"The Ventures In Space",
         "year":1964,
         "band":"The Ventures",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/38/Ventures-In-Space.jpg"
     },
     {
@@ -1236,6 +1412,7 @@
         "title":"Headquarters",
         "year":1967,
         "band":"The Monkees",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3d/Headquarters_-_The_Monkees.jpg"
     },
     {
@@ -1243,6 +1420,7 @@
         "title":"Unknown Pleasures",
         "year":1979,
         "band":"Joy Division",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/7/70/Unknown_Pleasures_Joy_Division_LP_sleeve.jpg"
     },
     {
@@ -1250,6 +1428,7 @@
         "title":"American Idiot",
         "year":2004,
         "band":"Green Day",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png"
     },
     {
@@ -1257,6 +1436,7 @@
         "title":"Young, Gifted & Black",
         "year":1972,
         "band":"Aretha Franklin",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/4d/ArethaFranklinYoung%2CGifted%26Black.jpg"
     },
     {
@@ -1264,6 +1444,7 @@
         "title":"Toys in the Attic",
         "year":1975,
         "band":"Aerosmith",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/37/Aerosmith_-_Toys_in_the_Attic.jpg"
     },
     {
@@ -1271,13 +1452,15 @@
         "title":"Mellon Collie and the Infinite Sadness",
         "year":1995,
         "band":"The Smashing Pumpkins",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/7/7e/Smashing_Pumpkins_-_Mellon_Collie_And_The_Infinite_Sadness.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/7/76/The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg"
     },
     {
         "position":183,
         "title":"The Downward Spiral",
         "year":1994,
         "band":"Nine Inch Nails",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/3/3b/Official_Album_Cover_of_%22The_Downward_Spiral%22_by_Nine_Inch_Nails.png"
     },
     {
@@ -1285,6 +1468,7 @@
         "title":"Speakerboxxx",
         "year":2003,
         "band":"OutKast",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/47/Outkast-speakerboxx-lovebelow.jpg"
     },
     {
@@ -1292,6 +1476,7 @@
         "title":"The Fame",
         "year":2008,
         "band":"Lady Gaga",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Lady_Gaga_%E2%80%93_The_Fame_album_cover.png/220px-Lady_Gaga_%E2%80%93_The_Fame_album_cover.png"
     },
     {
@@ -1299,6 +1484,7 @@
         "title":"All Eyez On Me",
         "year":1996,
         "band":"2Pac",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/1/16/Alleyezonme.jpg"
     },
     {
@@ -1306,6 +1492,7 @@
         "title":"Ace Of Spades",
         "year":1980,
         "band":"Motörhead",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/57/Mot%C3%B6rhead_-_Ace_of_Spades_%281980%29.jpg"
     },
     {
@@ -1313,13 +1500,15 @@
         "title":"Daydream Nation",
         "year":1988,
         "band":"Sonic Youth",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/0/09/SonicYouthDaydreamNationalbumcover.jpg"
+        "description":"",
+        "cover":"https://upload.wikimedia.org/wikipedia/en/a/ad/Daydreamnation.png"
     },
     {
         "position":189,
         "title":"Closer",
         "year":1980,
         "band":"Joy Division",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/64/Joy_Division_Closer.jpg"
     },
     {
@@ -1327,6 +1516,7 @@
         "title":"Fragile",
         "year":1971,
         "band":"Yes",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/c/c0/Fragile_%28Yes_album%29_cover_art.jpg"
     },
     {
@@ -1334,6 +1524,7 @@
         "title":"Please Please Me",
         "year":1963,
         "band":"The Beatles",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/PleasePleaseMe_audio_cover.jpg/220px-PleasePleaseMe_audio_cover.jpg"
     },
     {
@@ -1341,6 +1532,7 @@
         "title":"Rhythm Nation 1814",
         "year":1989,
         "band":"Janet Jackson",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/9/91/Janet_Jackson_Rhythm_Nation_1814.png"
     },
     {
@@ -1348,6 +1540,7 @@
         "title":"American Beauty",
         "year":1970,
         "band":"The Grateful Dead",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/6a/Grateful_Dead_-_American_Beauty.jpg"
     },
     {
@@ -1355,6 +1548,7 @@
         "title":"Hysteria",
         "year":1987,
         "band":"Def Leppard",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/4/40/Def_Leppard_-_Hysteria_%28vinyl_version%29.jpg"
     },
     {
@@ -1362,6 +1556,7 @@
         "title":"Brothers In Arms",
         "year":1985,
         "band":"Dire Straits",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/6/67/DS_Brothers_in_Arms.jpg"
     },
     {
@@ -1369,6 +1564,7 @@
         "title":"The Stranger",
         "year":1977,
         "band":"Billy Joel",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/f/f5/Thestranger1977.jpg"
     },
     {
@@ -1376,6 +1572,7 @@
         "title":"This Year's Model",
         "year":1978,
         "band":"Elvis Costello & The Attractions",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/e/e1/Elvis-Costello-This-Years-Model.jpg"
     },
     {
@@ -1383,6 +1580,7 @@
         "title":"Enter the Wu-Tang (36 Chambers)",
         "year":1993,
         "band":"Wu-Tang Clan",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/5/53/Wu-TangClanEntertheWu-Tangalbumcover.jpg"
     },
     {
@@ -1390,6 +1588,7 @@
         "title":"Bad Girls",
         "year":1979,
         "band":"Donna Summer",
+        "description":"",
         "cover":"https://upload.wikimedia.org/wikipedia/en/b/b7/Bad_Girls_LP.jpg"
     },
     {
@@ -1397,6 +1596,7 @@
         "title":"Kid A",
         "year":2000,
         "band":"Radiohead",
-        "cover":"https://upload.wikimedia.org/wikipedia/en/b/b5/Radiohead.kida.albumart.jpg"
+        "description":"",
+        "cover":"https://en.wikipedia.org/wiki/Kid_A#/media/File:Radioheadkida.png"
     }
 ]
