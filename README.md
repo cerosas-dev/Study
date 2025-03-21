@@ -17,21 +17,16 @@
 ## Contents
 
 * [Data Structures And Algorithms](#data-structures-and-algorithms)
-
 * [Core Java](#core-java)
-
 * [Core Android](#core-android)
-
+* [Room in Android](#room-in-android)
+* [Dependency Injection in Android Using Hilt](#dependency-injection-in-android-using-hilt)
+* [Jetpack Compose](jetpack-compose)
 * [Architecture](#architecture)
-
 * [Design Problem](#design-problem)
-
 * [Tools And Technologies](#tools-and-technologies)
-
 * [Android Test Driven Development](#android-test-driven-development)
-
 * [Others](#others)
-
 
 ### Data Structures And Algorithms
 
@@ -1750,6 +1745,467 @@
 	
 	- When orientation changes, Android destroys your current activity and creates a new activity again. And whenever Android destroys and recreates your Activity for orientation change, it calls onSaveInstanceState() before destroying and calls onCreate() after recreating. Whatever you save in the bundle in onSaveInstanceState, you can get back from the onCreate() parameter.
 * What are different ways to store data in your Android app?
+
+#### Room in Android
+
+Room is a persistence library that provides an abstraction layer over SQLite, helping you manage database interactions more efficiently.
+
+The Room persistence library provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite. In particular, Room provides the following benefits:
+
+- Compile-time verification of SQL queries.
+- Convenience annotations that minimize repetitive and error-prone boilerplate code.
+- Streamlined database migration paths.
+
+##### Primary components
+
+There are three major components in Room:
+
+1. The database class that holds the database and serves as the main access point for the underlying connection to your app's persisted data.
+2. Data entities that represent tables in your app's database.
+3. Data access objects (DAOs) that provide methods that your app can use to query, update, insert, and delete data in the database.
+
+The database class provides your app with instances of the DAOs associated with that database. In turn, the app can use the DAOs to retrieve data from the database as instances of the associated data entity objects. The app can also use the defined data entities to update rows from the corresponding tables, or to create new rows for insertion. Figure 1 illustrates the relationship between the different components of Room.
+
+![Room_Diagram](./assets/room_architecture.png)
+
+##### Add Dependencies
+
+In your `build.gradle` (Module: app), add the required Room dependencies:
+
+```gradle
+dependencies {
+    def room_version = "2.6.1" // Check for the latest version
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    
+    // For Kotlin projects, use KSP instead of annotationProcessor
+    ksp "androidx.room:room-compiler:$room_version"
+    
+    // Optional: For using Kotlin Coroutines with Room
+    implementation "androidx.room:room-ktx:$room_version"
+}
+```
+
+Ensure that your project has KSP enabled if you're using Kotlin:
+
+##### Create an Entity
+
+Define a data class representing a table in your database:
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "users")
+data class User(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val name: String,
+    val age: Int
+)
+
+
+```gradle
+plugins {
+    id 'com.google.devtools.ksp' version '1.9.0-1.0.13' apply false
+}
+```
+
+##### Create a DAO (Data Access Object)
+
+Define an interface for database operations:
+
+```kotlin
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+
+@Dao
+interface UserDao {
+    @Insert
+    suspend fun insertUser(user: User)
+
+    @Query("SELECT * FROM users")
+    suspend fun getAllUsers(): List<User>
+}
+```
+
+##### Create the Database
+
+Create an abstract class that extends RoomDatabase:
+
+```kotlin
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+
+@Database(entities = [User::class], version = 1, exportSchema = false)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun userDao(): UserDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: AppDatabase? = null
+
+        fun getDatabase(context: Context): AppDatabase {
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "app_database"
+                ).build()
+                INSTANCE = instance
+                instance
+            }
+        }
+    }
+}
+```
+
+##### Use Room in ViewModel
+
+Example usage of Room inside a ViewModel:
+
+```kotlin
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
+
+class UserViewModel(private val db: AppDatabase) : ViewModel() {
+
+    fun addUser(user: User) {
+        viewModelScope.launch {
+            db.userDao().insertUser(user)
+        }
+    }
+
+    suspend fun getUsers(): List<User> {
+        return db.userDao().getAllUsers()
+    }
+}
+```
+
+##### Initialize the Database in Application Class (Optional)
+
+To initialize Room when the app starts, modify Application class:
+
+```kotlin
+import android.app.Application
+
+class MyApp : Application() {
+    val database: AppDatabase by lazy { AppDatabase.getDatabase(this) }
+}
+```
+
+#### Dependency Injection in Android Using Hilt
+
+##### What is Hilt?
+
+Hilt is a dependency injection library for Android that simplifies DI by providing a standard way to manage dependencies across your app. It is built on top of [Dagger](https://dagger.dev/) and is recommended by Google for dependency injection in Android applications.
+
+##### 1. Add Hilt Dependencies
+
+First, add the required dependencies in your `build.gradle` (Module: app):
+
+```gradle
+dependencies {
+    def hilt_version = "2.50" // Check for the latest version
+
+    // Hilt core dependency
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+}
+```
+
+In your build.gradle (Project level), apply the Hilt Gradle plugin:
+
+```gradle
+plugins {
+    id 'com.google.dagger.hilt.android' version '2.50' apply false
+}
+```
+
+Apply the plugin in your `build.gradle` (Module: app):
+
+```gradle
+plugins {
+    id 'com.google.dagger.hilt.android'
+}
+```
+
+##### Initialize Hilt in Application Class
+
+Create an Application class and annotate it with @HiltAndroidApp:
+
+```kotlin
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class MyApp : Application()
+```
+
+Then, register it in the AndroidManifest.xml:
+
+```xml
+<application
+    android:name=".MyApp"
+    ... >
+</application>
+```
+
+##### Create a Hilt Module
+
+Modules provide dependencies. Create a Module class and annotate it with @Module and @InstallIn:
+
+```kotlin
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
+
+@Module
+@InstallIn(SingletonComponent::class) // Application-wide scope
+object AppModule {
+
+    @Provides
+    @Singleton
+    fun provideSampleString(): String {
+        return "Hello from Hilt!"
+    }
+}
+```
+
+##### Inject Dependencies
+
+Use @Inject to request dependencies in classes:
+Injecting into an Activity or Fragment
+
+In an Activity or Fragment, use @HiltAndroidApp to enable injection:
+
+```kotlin
+import android.os.Bundle
+import android.widget.TextView
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var sampleString: String // Injected dependency
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val textView = TextView(this).apply { text = sampleString }
+        setContentView(textView)
+    }
+}
+```
+
+##### Injecting into a ViewModel
+
+Hilt works seamlessly with ViewModel using @HiltViewModel:
+
+```kotlin
+import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
+
+@HiltViewModel
+class MyViewModel @Inject constructor(
+    private val sampleString: String
+) : ViewModel() {
+
+    fun getSampleText() = sampleString
+}
+```
+
+Then, use the `ViewModel` in an `Activity`:
+
+```kotlin
+import androidx.activity.viewModels
+
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
+
+    private val viewModel: MyViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val textView = TextView(this).apply { text = viewModel.getSampleText() }
+        setContentView(textView)
+    }
+}
+```
+
+##### Summary
+
+1. Add Hilt dependencies.
+2. Annotate your `Application` class with `@HiltAndroidApp`.
+3. Create `@Module` to provide dependencies.
+4. Use `@Inject` to request dependencies in classes.
+5. Annotate `Activity` and `Fragment` with @AndroidEntryPoint.
+6. Use `@HiltViewModel` for dependency injection in `ViewModel`.
+    
+#### Jetpack Compose
+
+Jetpack Compose is a modern, declarative UI toolkit for building native Android apps. It simplifies UI development by using **Kotlin-based composable functions** instead of traditional XML layouts. 
+
+##### Key Features:
+- **Declarative UI**: Define UI elements in Kotlin using functions.
+- **State Management**: Uses `State` and `LiveData` for reactive UI updates.
+- **Composable Functions**: UI elements are reusable and modular.
+- **Interoperability**: Works with existing Views and XML-based layouts.
+- **Performance**: Optimized rendering with minimal recomposition.
+
+##### Differences Between Jetpack Compose and Legacy Views
+
+| Feature | Jetpack Compose | Legacy Views |
+|---------|----------------|-------------|
+| **UI Definition** | Uses Kotlin functions (`@Composable`) | Uses XML files (`layout.xml`) |
+| **State Management** | Uses `State`, `LiveData`, `Flow`, `MutableState` | Uses `findViewById()` and `ViewModel` |
+| **Reusability** | Composable functions are modular and reusable | Requires Fragments and ViewGroups |
+| **Performance** | Efficient rendering and recomposition | Can be slow due to View hierarchy |
+| **Interoperability** | Works with Views (`ComposeView`) | Cannot use Compose inside XML layouts |
+| **Theming** | Uses `MaterialTheme` and customizable styles | Uses `styles.xml` and `themes.xml` |
+
+##### How to Use Jetpack Compose in Android
+
+1. Add Dependencies
+
+Modify your `build.gradle` (Module: app) to include Jetpack Compose:
+
+```gradle
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.0'
+    }
+}
+
+dependencies {
+    def compose_version = "1.6.0"
+
+    // Jetpack Compose core library
+    implementation "androidx.compose.ui:ui:$compose_version"
+
+    // Material Design
+    implementation "androidx.compose.material:material:$compose_version"
+
+    // UI Preview
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+
+    // ViewModel support
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2"
+}
+```
+
+2. Create a Composable Function
+
+Instead of XML, UI is defined using composable functions:
+
+```kotlin
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.tooling.preview.Preview
+
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello, $name!", style = MaterialTheme.typography.h4)
+}
+
+@Preview
+@Composable
+fun PreviewGreeting() {
+    Greeting(name = "Android")
+}
+```
+
+3. Use Jetpack Compose in an Activity
+
+Replace `setContentView(R.layout.activity_main)` with `setContent`:
+
+```kotlin
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.material.*
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MyApp()
+        }
+    }
+}
+
+@Composable
+fun MyApp() {
+    MaterialTheme {
+        Greeting("Jetpack Compose")
+    }
+}
+```
+
+4. Handling User Interaction
+
+Use `State` to manage user input dynamically:
+
+```kotlin
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun CounterApp() {
+    var count by remember { mutableStateOf(0) }
+
+    Column(modifier = Modifier.padding(16.dp)) {
+        Text(text = "Count: $count", style = MaterialTheme.typography.h5)
+        Spacer(modifier = Modifier.height(8.dp))
+        Button(onClick = { count++ }) {
+            Text(text = "Increase")
+        }
+    }
+}
+
+@Preview
+@Composable
+fun PreviewCounterApp() {
+    CounterApp()
+}
+```
+
+##### Conclusion
+
+Jetpack Compose provides a modern, efficient, and declarative way to build UI in Android using Kotlin. It replaces XML-based Views and allows for more modular, reusable, and testable components.
+
+Why Use Jetpack Compose?
+
+- No need for findViewById()
+- Simplifies UI state management
+- Reduces boilerplate code
+- Works seamlessly with Material Design
 
 #### Look and Feel
 
