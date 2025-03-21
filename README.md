@@ -21,7 +21,7 @@
 * [Core Android](#core-android)
 * [Room in Android](#room-in-android)
 * [Dependency Injection in Android Using Hilt](#dependency-injection-in-android-using-hilt)
-* [Jetpack Compose](jetpack-compose)
+* [Jetpack Compose](#jetpack-compose)
 * [Architecture](#architecture)
 * [Design Problem](#design-problem)
 * [Tools And Technologies](#tools-and-technologies)
@@ -2075,7 +2075,7 @@ Jetpack Compose is a modern, declarative UI toolkit for building native Android 
 
 ##### How to Use Jetpack Compose in Android
 
-1. Add Dependencies
+###### Add Dependencies
 
 Modify your `build.gradle` (Module: app) to include Jetpack Compose:
 
@@ -2114,7 +2114,7 @@ dependencies {
 }
 ```
 
-2. Create a Composable Function
+###### Create a Composable Function
 
 Instead of XML, UI is defined using composable functions:
 
@@ -2138,7 +2138,7 @@ fun PreviewGreeting() {
 }
 ```
 
-3. Use Jetpack Compose in an Activity
+###### Use Jetpack Compose in an Activity
 
 Replace `setContentView(R.layout.activity_main)` with `setContent`:
 
@@ -2165,7 +2165,7 @@ fun MyApp() {
 }
 ```
 
-4. Handling User Interaction
+###### Handling User Interaction
 
 Use `State` to manage user input dynamically:
 
@@ -2207,7 +2207,206 @@ Why Use Jetpack Compose?
 - Reduces boilerplate code
 - Works seamlessly with Material Design
 
-#### Look and Feel
+#### Reactive Programming in Android (Coroutines, Flows and States)
+
+###### Introduction to Reactive Programming in Android
+
+Reactive programming is a programming paradigm focused on data streams and propagation of changes. In Android, this is particularly useful for handling UI updates, network calls, and database operations efficiently.
+
+Kotlin's Coroutines and Flow provide a structured way to handle asynchronous programming reactively.
+
+###### Core Components
+
+- Coroutines
+  - Coroutines allow writing asynchronous code sequentially using suspend functions.
+  - They run in different CoroutineScopes like viewModelScope, lifecycleScope, or custom scopes.
+  - Help manage threading efficiently without blocking the main thread.
+
+- Flow
+  - A cold stream of data that emits values over time.
+  - Works with collect {} to observe emitted values.
+  - Provides built-in operators like map, filter, combine, etc.
+
+- State in Reactive Programming
+  - UI state needs to be observable and reactive to changes.
+  - Flow and StateFlow help manage state effectively.
+
+###### Cold Flow
+
+A Cold Flow only starts producing and emitting values when a collector starts collecting it. Each collector receives its own fresh emissions from the beginning.
+
+Example: 
+
+```kotlin
+fun getColdFlow(): Flow<Int> = flow {
+    for (i in 1..5) {
+        delay(1000) // Simulate some work
+        emit(i)
+    }
+}
+
+fun collectColdFlow() {
+    CoroutineScope(Dispatchers.Main).launch {
+        getColdFlow().collect { value ->
+            println("Received: $value")
+        }
+    }
+}
+```
+
+Characteristics of Cold Flows:
+
+- Starts producing values only when a collector starts collecting.
+- Each new collector gets a fresh independent sequence.
+- Example: `flow {}`, database queries (`Room`), API calls.
+
+###### Hot Flow
+
+A Hot Flow emits values continuously, regardless of whether there are active collectors or not. Collectors only receive values from the moment they start collecting.
+
+Hot flows include:
+- `StateFlow` (Holds the latest state, used for UI state management)
+- `SharedFlow` (Broadcasts data to multiple collectors, used for events)
+
+Example (Using MutableSharedFlow):
+
+```kotlin
+class MyViewModel : ViewModel() {
+    private val _hotFlow = MutableSharedFlow<Int>()
+    val hotFlow: SharedFlow<Int> = _hotFlow
+
+    init {
+        CoroutineScope(Dispatchers.IO).launch {
+            repeat(5) {
+                _hotFlow.emit(it + 1)
+                delay(1000)
+            }
+        }
+    }
+}
+```
+
+Characteristics of Hot Flows:
+- Emits values whether there is a collector or not.
+- Collectors receive only new values, not past emissions (unless replay is set).
+- Example: `MutableStateFlow`, `MutableSharedFlow`, `LiveData`.
+
+###### Converting Cold Flow to Hot Flow
+
+We can convert a Cold Flow into a Hot Flow by using `stateIn` or `shareIn`.
+
+Using stateIn (Cold → StateFlow): 
+
+```kotlin
+class MyViewModel : ViewModel() {
+    private val _coldFlow = flow {
+        repeat(5) {
+            emit(it + 1)
+            delay(1000)
+        }
+    }
+
+    val hotStateFlow: StateFlow<Int> = _coldFlow
+        .stateIn(viewModelScope, SharingStarted.Lazily, 0)
+}
+```
+
+- Converts a `Flow` into a `StateFlow`.
+- `SharingStarted.Lazily`: Starts emitting only when collected.
+- `0`: Initial value for `StateFlow`.
+
+Using shareIn (Cold → SharedFlow):
+
+```kotlin
+class MyViewModel : ViewModel() {
+    private val _coldFlow = flow {
+        repeat(5) {
+            emit(it + 1)
+            delay(1000)
+        }
+    }
+
+    val hotSharedFlow: SharedFlow<Int> = _coldFlow
+        .shareIn(viewModelScope, SharingStarted.WhileSubscribed(), replay = 1)
+}
+```
+
+- Converts a `Flow` into a `SharedFlow`.
+- `SharingStarted.WhileSubscribed()`: Emits only when there are active collectors.
+- `replay = 1`: New subscribers get the latest emitted value.
+
+###### Converting Hot Flow to Cold Flow
+
+To convert a Hot Flow (e.g., `SharedFlow` or `StateFlow`) into a Cold Flow, simply use the `.asFlow() ` extension function:
+
+```kotlin
+val coldFlow = hotSharedFlow.asFlow() // Converts SharedFlow back to a Flow
+```
+
+This allows consumers to collect values lazily, just like a Cold Flow.
+
+###### Summary Table
+| Feature | Cold Flow (Flow) | Hot Flow (StateFlow, SharedFlow) |
+|----|----|----|
+| Emits values | When collected | Continuously |
+| New collector behavior | Starts from beginning | Only gets latest/new values |
+| Examples | API calls, database queries | UI state, user interactions |
+| Conversion | `.stateIn()` or `.shareIn()` | `.asFlow()` |
+
+###### When to Use What?
+- Use Cold Flows for API calls, database operations, or computation-heavy tasks that need to start fresh for each collector.
+- Use Hot Flows for UI state (`StateFlow`) and UI events (`SharedFlow`).
+    
+###### Difference Between MutableSharedFlow and MutableStateFlow
+
+| Feature | MutableSharedFlow | MutableStateFlow |
+|----|----|----|
+| Behavior | Broadcasts emitted values to multiple collectors | Holds a single state value and emits updates |
+| Initial Value | No initial value | Requires an initial value |
+| Replay Mechanism | Can be configured with a buffer (replay) | Always keeps the latest value |
+| Multiple Subscribers | New subscribers do not receive old values unless replay > 0 | New subscribers receive the latest value immediately |
+| Use Case | Events (navigation, UI actions, etc.) | State management (UI state, ViewModel data) | 
+
+###### Example Usage
+
+Using `MutableStateFlow` for UI State
+
+```kotlin
+class MyViewModel : ViewModel() {
+    private val _uiState = MutableStateFlow("Initial State")
+    val uiState: StateFlow<String> = _uiState
+
+    fun updateState(newState: String) {
+        _uiState.value = newState // Updates the latest state
+    }
+}
+```
+
+- Best for representing UI state, as it holds the latest value.
+- UI components can collect the state and react to changes.
+
+Using `MutableSharedFlow` for Events
+
+```kotlin
+class MyViewModel : ViewModel() {
+    private val _eventFlow = MutableSharedFlow<String>()
+    val eventFlow = _eventFlow.asSharedFlow()
+
+    suspend fun sendEvent(event: String) {
+        _eventFlow.emit(event) // Sends an event
+    }
+}
+```
+
+- Best for handling one-time events like navigation or messages.
+- Unlike StateFlow, it does not hold a value, making it ideal for transient data.
+
+###### When to Use Which?
+
+- Use StateFlow when maintaining UI state (latest value is always needed).
+- Use SharedFlow for one-time events like navigation or toast messages.
+    
+##### Look and Feel
 
 * What is a `Spannable`?
 	- Spannable is a Spanned, adding in the ability to modify the spans (to add or remove formatting), but not to modify the text itself. This is the interface for text to which markup objects can be attached and detached. Not all Spannable classes have mutable text; see Editable for that.
