@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="AndroidInterviewQuestions" src="https://github.com/cerosas-dev/Study/raw/master/android_logo.png">
+<img alt="AndroidInterviewQuestions" src="https://github.com/cerosas-dev/Study/raw/master/android_logo.png" width="800" height="auto">
 </p>
 
 
@@ -19,9 +19,11 @@
 * [Data Structures And Algorithms](#data-structures-and-algorithms)
 * [Core Java](#core-java)
 * [Core Android](#core-android)
+* [Android Services](#android-services)
 * [Room in Android](#room-in-android)
 * [Dependency Injection in Android Using Hilt](#dependency-injection-in-android-using-hilt)
 * [Jetpack Compose](#jetpack-compose)
+* [Reactive Programming in Android (Coroutines, Flows and States)](#reactive-programming-in-android-coroutines-flows-and-states)
 * [Architecture](#architecture)
 * [Design Problem](#design-problem)
 * [Tools And Technologies](#tools-and-technologies)
@@ -1746,6 +1748,151 @@
 	- When orientation changes, Android destroys your current activity and creates a new activity again. And whenever Android destroys and recreates your Activity for orientation change, it calls onSaveInstanceState() before destroying and calls onCreate() after recreating. Whatever you save in the bundle in onSaveInstanceState, you can get back from the onCreate() parameter.
 * What are different ways to store data in your Android app?
 
+#### Android Services
+
+- What is a Service in Android?
+
+A Service in Android is a background component that performs long-running operations without a UI. It runs independently of activities and can continue running even if the app is closed (in some cases).
+
+- Types of Services in Android
+
+| Type | Description |
+|----|----|
+| Foreground Service | Runs in the foreground with a persistent notification (e.g., music player, location tracking). |
+| Background Service | Runs in the background without user interaction (e.g., fetching data, uploading files). |
+| Bound Service | Tied to another component (Activity/Fragment) and provides inter-process communication (IPC). | 
+
+- When to Use a Service?
+* Playing music in the background.
+* Tracking location (e.g., GPS tracking apps).
+* Downloading/uploading files in the background.
+* Running periodic tasks (e.g., syncing data with a server).
+* Handling long-running operations without blocking the UI.
+
+- Adding a Service to Your Project
+
+Step 1: Create a Service Class
+
+```kotlin
+class MyBackgroundService : Service() {
+    override fun onBind(intent: Intent?): IBinder? {
+        return null // Required for bound services, but not needed here
+    }
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        // Perform background task
+        Thread {
+            for (i in 1..5) {
+                Log.d("Service", "Running service... $i")
+                Thread.sleep(1000)
+            }
+            stopSelf() // Stop the service after execution
+        }.start()
+        return START_STICKY
+    }
+}
+```
+
+ - `onBind()`: Used for Bound Services (not needed for simple services).
+ - `onStartCommand()`: Called when the service starts (`START_STICKY` ensures it restarts if killed).
+ - `stopSelf()`: Stops the service when the task is complete.
+
+Step 2: Declare the Service in AndroidManifest.xml
+
+```xml
+<service android:name=".MyBackgroundService" />
+```
+
+This registers the service in the app.
+
+Step 3: Start and Stop the Service
+
+Start the Service from an Activity
+
+```kotlin
+val intent = Intent(this, MyBackgroundService::class.java)
+startService(intent) // Starts the service
+```
+
+Stop the Service from an Activity
+
+```kotlin
+val intent = Intent(this, MyBackgroundService::class.java)
+stopService(intent) // Stops the service
+```
+
+##### Foreground Service (With Notification)
+
+A foreground service requires a notification to stay active.
+
+Foreground Service with Notification example:
+
+```kotlin
+class MyForegroundService : Service() {
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        val notification = createNotification()
+        startForeground(1, notification) // Keep service active
+        return START_NOT_STICKY
+    }
+
+    private fun createNotification(): Notification {
+        val channelId = "ForegroundServiceChannel"
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(channelId, "Foreground Service",
+                NotificationManager.IMPORTANCE_LOW)
+            getSystemService(NotificationManager::class.java)?.createNotificationChannel(channel)
+        }
+
+        return NotificationCompat.Builder(this, channelId)
+            .setContentTitle("Foreground Service")
+            .setContentText("Running...")
+            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .build()
+    }
+}
+```
+
+Add Foreground Service Permission in `AndroidManifest.xml`
+
+```xml
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<service android:name=".MyForegroundService" android:foregroundServiceType="location"/>
+```
+
+Start Foreground Service
+
+```kotlin
+val intent = Intent(this, MyForegroundService::class.java)
+startForegroundService(intent) // Required for API 26+
+```
+
+Stopping a Running Service
+
+ - For a regular service: Call `stopSelf()` inside the service or `stopService(intent)`.
+ - For a foreground service: Call `stopForeground(true)` and `stopSelf()`.
+
+```kotlin
+stopForeground(true) // Stops the notification
+stopSelf() // Stops the service
+```
+
+When to Use Alternatives Instead of Services?
+
+| Use Case | Alternative |
+|----|----|
+| Short background tasks | Use WorkManager or Coroutines |
+| Periodic tasks | Use AlarmManager or JobScheduler |
+| Real-time updates | Use BroadcastReceiver or LiveData |
+
+Summary
+
+- Use a `Service` when you need a long-running task that continues even if the app is closed.
+- Use Foreground Services for persistent background tasks (e.g., music players, location tracking).
+- Declare the service in `AndroidManifest.xml` and start it using `startService()` or `startForegroundService()`.
+- Consider `WorkManager` or `Coroutines` for simple tasks to save battery life.
+
 #### Room in Android
 
 Room is a persistence library that provides an abstraction layer over SQLite, helping you manage database interactions more efficiently.
@@ -2882,3 +3029,4 @@ Use Exceptions Rather Than Return Codes : The problem with Return-Code approache
 
 ### Contributing to Android Interview Questions
 Just make pull request. You are in!
+1. > 
