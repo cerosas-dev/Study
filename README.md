@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="AndroidInterviewQuestions" src="https://github.com/cerosas-dev/Study/raw/master/android_logo.png" width="800" height="auto">
+<img alt="AndroidInterviewQuestions" src="assets/android_logo.png" width="800" height="auto">
 </p>
 
 
@@ -24,6 +24,7 @@
 * [Dependency Injection in Android Using Hilt](#dependency-injection-in-android-using-hilt)
 * [Jetpack Compose](#jetpack-compose)
 * [Reactive Programming in Android (Coroutines, Flows and States)](#reactive-programming-in-android-coroutines-flows-and-states)
+* [Architecture Patterns (MVC vs MVP vs MVVM vs MVI)](#architecture-patterns-mvc-vs-mvp-vs-mvvm-vs-mvi))
 * [Architecture](#architecture)
 * [Design Problem](#design-problem)
 * [Tools And Technologies](#tools-and-technologies)
@@ -62,8 +63,10 @@
 
 * DoublyLinkedList
    - A DoublyLinkedList is based on a LinkedList, but there is two pointers in each node, "previous" pointer holds reference to the previous node and "next" pointer holds reference to the next node. It also has a Head node, head node's next pointer references the first node in this DoublyLinkedList. The last node's "next" reference points to `null`, but if last node's next pointer points to the first node, such DoublyLinkedList is called "Circular DoublyLinkedList". This data structure is very convenient if you need to be able to traverse stored elements in both directions. 
-   
-       ![DoublyLinkedList](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png)
+
+		<p align="center">
+		<img alt="DoublyLinkedList" src="./assets/Doubly-linked-list.svg.png" width="640" height="auto">
+		</p>
             
        | Algorithm | Average | Worst Case |
        |:---------:|:-------:|:----------:|
@@ -94,7 +97,7 @@
                 <td>Θ(n)</td>
                 <td>O(n)</td>
                 <td rowspan="5">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/250px-Data_stack.svg.png"/>
+                	<img alt="Stack" src="./assets/Data_stack.svg.png" width="240" height="auto">
                 </td>
             </tr>
             <tr>
@@ -495,6 +498,7 @@
 	```
     - Merge sort [Wikipedia](https://en.wikipedia.org/wiki/Merge_sort?oldformat=true)
         - This is a "divide and conquer" algorithm, meaning it recursively "divides" given array in to smaller parts (up to 1 element) and then sorts those parts, combining them with each other. This approach allows merge sort to achieve very high speed, while  doubling required space, of course, but today memory space is more available than it was a couple of years ago, so this trade-off is considered acceptable.
+
             <table>
             <tr>
                 <th colspan="3" align="center">Time Complexity</th>
@@ -513,6 +517,7 @@
                 <td align="center">O(n)</td>
             </tr>
             </table>
+
 	```java
 	public static void merge(int arr[], int beg, int mid, int end) {
         int l = mid - beg + 1;
@@ -559,6 +564,7 @@
 
     - Quicksort [Wikipedia](https://en.wikipedia.org/wiki/Quicksort?oldformat=true)
         - Quicksort is considered, well, quite quick. When implemented correctly, it can be a significant number of times faster than its' main competitors. This algorithm is also of "divide and conquer" family and its' first step is to choose a "pivot" element (choosing it randomly, statistically, minimizes the chance to get the worst performance), then by comparing elements to this pivot, moving it closer and closer to its' final place. During this process, the elements that are bigger are moved to the right side of it and smaller elements to the left. After this is done, quicksort repeats this process for subarrays on each side of placed pivot (does first step recursively), until the array is sorted.
+
             <table>
             <tr>
                 <th colspan="3" align="center">Time Complexity</th>
@@ -577,6 +583,7 @@
                 <td align="center">O(1)</td>
             </tr>
             </table>
+
 	```java
 	public static int partition(int a[], int beg, int end) {
         int left, right, temp, loc, flag;
@@ -626,11 +633,9 @@
 
     * Dynamic Programming is mainly an optimization over plain [recursion](https://www.geeksforgeeks.org/recursion/). Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial. For example, if we write simple recursive solution for [Fibonacci Numbers](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/), we get exponential time complexity and if we optimize it by storing solutions of subproblems, time complexity reduces to linear.
 
-        
-
-        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Dynamic-Programming-1-1024x512.png" alt="DynamicProgramming" style="zoom:60%;" />
-
-        
+		<p align="center">
+		<img alt="DynamicProgramming" src="./assets/Dynamic-Programming.png" width="640" height="auto">
+		</p>
 
 * Greedy Algorithm
 
@@ -638,11 +643,10 @@
 
         For example consider the [Fractional Knapsack Problem](https://www.geeksforgeeks.org/fractional-knapsack-problem/). The local optimal strategy is to choose the item that has maximum value vs weight ratio. This strategy also leads to global optimal solution because we allowed to take fractions of an item.
 
-        
+		<p align="center">
+		<img alt="Fractional-Knapsack" src="./assets/Fractional-Knapsack.png" width="640" height="auto">
+		</p>
 
-        <img src="https://www.geeksforgeeks.org/wp-content/uploads/Fractional-Knapsackexample-min.png" alt="GreedyAlgorithm" style="zoom:45%;" />
-
-        
 
 * String Manipulation
 
@@ -762,9 +766,11 @@
 * Do you agree we use composition over inheritance? [Composition vs Inheritance](https://www.journaldev.com/12086/composition-vs-inheritance)
 
 * Difference between method overloading and overriding.
-        <p align="center">
-        <img alt="Overloading and Overriding" src="https://github.com/codeshef/android-interview-questions/blob/master/assets/overloading-vs-overriding.png?raw=true">
-        </p>
+
+    <p align="center">
+    <img alt="Overloading and Overriding" src="assets/overloading-vs-overriding.png" width="640" height="auto">
+    </p>
+
     - Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at compile-time however binding of overridden method call to its definition happens at runtime.
     More info on static vs. dynamic binding: [StackOverflow](https://stackoverflow.com/questions/19017258/static-vs-dynamic-binding-in-java).
     - Static methods can be overloaded which means a class can have more than one static method of same name. Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class as overridden static methods are chosen by the reference class and not by the class of the object.
@@ -1324,7 +1330,9 @@
 * What is `Application` class?
 	- The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
-		![ApplicationLifeCycle](https://developer.sony.com/reference/docs/sony-addon-sdk/images/smallapp_lifecycle.png)
+		<p align="center">
+		<img alt="ApplicationLifeCycle" src="./assets/app_lifecycle.png" width="640" height="auto">
+		</p>
 	
 #### Activity
 
@@ -1333,7 +1341,9 @@
 
 * Explain `Activity` and `Fragment` lifecycle. (Complete diagram [GitHub](https://github.com/xxv/android-lifecycle), simplified diagram for [Activity](https://developer.android.com/guide/components/activities/activity-lifecycle.html#alc), [Fragment](https://developer.android.com/guide/components/fragments.html#Lifecycle))
 
-![ActivityFragmentLifeCycle](https://i.stack.imgur.com/1llRw.png)
+	<p align="center">
+	<img alt="ApplicationLifeCycle" src="./assets/full_lifecycle.png" width="640" height="auto">
+	</p>
 
 * What are "launch modes"? [Mindorks](https://blog.mindorks.com/android-activity-launchmode-explained-cbc6cf996802)
 	- There are four launch modes for activity. They are:
@@ -1364,8 +1374,10 @@
 	-  All Fragment-to-Fragment communication is done either through a shared ViewModel or through the associated Activity. Two Fragments should never communicate directly.
 	-  ViewModel objects are designed to outlive specific instantiations of views or LifecycleOwners. This design also means you can write tests to cover a ViewModel more easily as it doesn't know about view and Lifecycle objects. ViewModel objects can contain LifecycleObservers, such as LiveData objects. However ViewModel objects must never observe changes to lifecycle-aware observables, such as LiveData objects. If the ViewModel needs the Application context, for example to find a system service, it can extend the AndroidViewModel class and have a constructor that receives the Application in the constructor, since Application class extends Context.
 
-		![ViewModelLifeCycle](https://developer.android.com/images/topic/libraries/architecture/viewmodel-lifecycle.png)
-	
+	<p align="center">
+	<img alt="ViewModelCycle" src="./assets/viewmodel-lifecycle.png" width="640" height="auto">
+	</p>
+
 * What is retained `Fragment`? [AndroidDesignPatterns](https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html)
 	- "retained" means that the fragment will not be destroyed on configuration changes. That is, the Fragment will be retained even if the configuration change causes the underlying Activity to be destroyed.
 	- Just like Activitys, Fragments may be destroyed by the system when memory resources are low. Whether you have your fragments retain their instance state across configuration changes will have no effect on whether or not the system will destroy the Fragments once you leave the Activity. If you leave the Activity (i.e. by pressing the home button), the Fragments may or may not be destroyed. If you leave the Activity by pressing the back button (thus, calling finish() and effectively destroying the Activity), all of the Activitys attached Fragments will also be destroyed.
@@ -1376,8 +1388,10 @@
 * What is `View` in Android?
 	- View is a basic building block of UI (User Interface) in android. A view is a small rectangular box which responds to user inputs. Eg: EditText , Button , CheckBox , etc.. ViewGroup is a invisible container of other views (child views) and other viewgroups.
 
-		![ViewLifeCycle](https://codentrick.com/content/images/2015/07/android_view_lifecycle.png)
-	
+	<p align="center">
+	<img alt="ViewCycle" src="./assets/view_lifecycle.png" width="640" height="auto">
+	</p>
+
 * Difference between `View.GONE` and `View.INVISIBLE`?
 	
 - `View.INVISIBLE` This view is invisible, but it still takes up space for layout purposes. `View.GONE` This view is invisible, and it doesn't take any space for layout purposes.
@@ -1654,7 +1668,9 @@
 	- `Handler` is a class with 2 basic functions: post tasks to the MessageQueue and process them. By default, Handler is implicitly associated with thread it was instantiated from via Looper, but you can tie it to another thread by explicitly providing its Looper at the constructor call as well. 
 	- `HandlerThread` is a derivation of `Thread`. The only significant difference between `HandlerThread` and `Thread` you should turn your attention to is that the first one incorporates `Looper`, `Thread` and `MessageQueue`.
 
-	![HandlerThread](https://s.nikitaog.me/android/Looper.png)
+	<p align="center">
+	<img alt="AndroidInterviewQuestions" src="assets/JavaLooper.png" width="800" height="auto">
+	</p>
 
 #### Working With Multimedia Content
 
@@ -1746,7 +1762,13 @@
 * How would you preserve `Activity` state during a screen rotation? [StackOverflow](https://stackoverflow.com/questions/3915952/how-to-save-state-during-orientation-change-in-android-if-the-state-is-made-of-m)
 	
 	- When orientation changes, Android destroys your current activity and creates a new activity again. And whenever Android destroys and recreates your Activity for orientation change, it calls onSaveInstanceState() before destroying and calls onCreate() after recreating. Whatever you save in the bundle in onSaveInstanceState, you can get back from the onCreate() parameter.
+
 * What are different ways to store data in your Android app?
+
+
+* What is a `Spannable`?
+	- Spannable is a Spanned, adding in the ability to modify the spans (to add or remove formatting), but not to modify the text itself. This is the interface for text to which markup objects can be attached and detached. Not all Spannable classes have mutable text; see Editable for that.
+
 
 #### Android Services
 
@@ -1913,7 +1935,9 @@ There are three major components in Room:
 
 The database class provides your app with instances of the DAOs associated with that database. In turn, the app can use the DAOs to retrieve data from the database as instances of the associated data entity objects. The app can also use the defined data entities to update rows from the corresponding tables, or to create new rows for insertion. Figure 1 illustrates the relationship between the different components of Room.
 
-![Room_Diagram](./assets/room_architecture.png)
+<p align="center">
+<img alt="AndroidInterviewQuestions" src="assets/room_architecture.png" width="640" height="auto">
+</p>
 
 ##### Add Dependencies
 
@@ -2356,13 +2380,13 @@ Why Use Jetpack Compose?
 
 #### Reactive Programming in Android (Coroutines, Flows and States)
 
-###### Introduction to Reactive Programming in Android
+##### Introduction to Reactive Programming in Android
 
 Reactive programming is a programming paradigm focused on data streams and propagation of changes. In Android, this is particularly useful for handling UI updates, network calls, and database operations efficiently.
 
 Kotlin's Coroutines and Flow provide a structured way to handle asynchronous programming reactively.
 
-###### Core Components
+##### Core Components
 
 - Coroutines
   - Coroutines allow writing asynchronous code sequentially using suspend functions.
@@ -2378,7 +2402,7 @@ Kotlin's Coroutines and Flow provide a structured way to handle asynchronous pro
   - UI state needs to be observable and reactive to changes.
   - Flow and StateFlow help manage state effectively.
 
-###### Cold Flow
+##### Cold Flow
 
 A Cold Flow only starts producing and emitting values when a collector starts collecting it. Each collector receives its own fresh emissions from the beginning.
 
@@ -2407,7 +2431,7 @@ Characteristics of Cold Flows:
 - Each new collector gets a fresh independent sequence.
 - Example: `flow {}`, database queries (`Room`), API calls.
 
-###### Hot Flow
+##### Hot Flow
 
 A Hot Flow emits values continuously, regardless of whether there are active collectors or not. Collectors only receive values from the moment they start collecting.
 
@@ -2438,7 +2462,7 @@ Characteristics of Hot Flows:
 - Collectors receive only new values, not past emissions (unless replay is set).
 - Example: `MutableStateFlow`, `MutableSharedFlow`, `LiveData`.
 
-###### Converting Cold Flow to Hot Flow
+##### Converting Cold Flow to Hot Flow
 
 We can convert a Cold Flow into a Hot Flow by using `stateIn` or `shareIn`.
 
@@ -2482,7 +2506,7 @@ class MyViewModel : ViewModel() {
 - `SharingStarted.WhileSubscribed()`: Emits only when there are active collectors.
 - `replay = 1`: New subscribers get the latest emitted value.
 
-###### Converting Hot Flow to Cold Flow
+##### Converting Hot Flow to Cold Flow
 
 To convert a Hot Flow (e.g., `SharedFlow` or `StateFlow`) into a Cold Flow, simply use the `.asFlow() ` extension function:
 
@@ -2492,7 +2516,7 @@ val coldFlow = hotSharedFlow.asFlow() // Converts SharedFlow back to a Flow
 
 This allows consumers to collect values lazily, just like a Cold Flow.
 
-###### Summary Table
+##### Summary Table
 | Feature | Cold Flow (Flow) | Hot Flow (StateFlow, SharedFlow) |
 |----|----|----|
 | Emits values | When collected | Continuously |
@@ -2500,11 +2524,11 @@ This allows consumers to collect values lazily, just like a Cold Flow.
 | Examples | API calls, database queries | UI state, user interactions |
 | Conversion | `.stateIn()` or `.shareIn()` | `.asFlow()` |
 
-###### When to Use What?
+##### When to Use What?
 - Use Cold Flows for API calls, database operations, or computation-heavy tasks that need to start fresh for each collector.
 - Use Hot Flows for UI state (`StateFlow`) and UI events (`SharedFlow`).
     
-###### Difference Between MutableSharedFlow and MutableStateFlow
+##### Difference Between MutableSharedFlow and MutableStateFlow
 
 | Feature | MutableSharedFlow | MutableStateFlow |
 |----|----|----|
@@ -2514,7 +2538,7 @@ This allows consumers to collect values lazily, just like a Cold Flow.
 | Multiple Subscribers | New subscribers do not receive old values unless replay > 0 | New subscribers receive the latest value immediately |
 | Use Case | Events (navigation, UI actions, etc.) | State management (UI state, ViewModel data) | 
 
-###### Example Usage
+##### Example Usage
 
 Using `MutableStateFlow` for UI State
 
@@ -2548,16 +2572,11 @@ class MyViewModel : ViewModel() {
 - Best for handling one-time events like navigation or messages.
 - Unlike StateFlow, it does not hold a value, making it ideal for transient data.
 
-###### When to Use Which?
+##### When to Use Which?
 
 - Use StateFlow when maintaining UI state (latest value is always needed).
 - Use SharedFlow for one-time events like navigation or toast messages.
     
-##### Look and Feel
-
-* What is a `Spannable`?
-	- Spannable is a Spanned, adding in the ability to modify the spans (to add or remove formatting), but not to modify the text itself. This is the interface for text to which markup objects can be attached and detached. Not all Spannable classes have mutable text; see Editable for that.
-
 #### Memory Optimizations
 
 * What is the `onTrimMemory()` method?
@@ -2860,6 +2879,332 @@ Batch the network calls: You should batch the network calls if possible so that 
 		- SwitchMap: Here, the switchMap operator is used to avoid the network call results which are not needed more for displaying to the user. Let say the last search query was “ab” and there is an ongoing network call for “ab” and the user typed “abc”. Then you are no more interested in the result of “ab”. You are only interested in the result of “abc”. So, the switchMap comes to the rescue. It only provides the result for the last search query(most recent) and ignores the rest.
 
 	> Returns a new Observable by applying a function that you supply to each item emitted by the source Observable that returns an Observable, and then emitting the items emitted by the most recently emitted of these Observables.
+	
+### Architecture Patterns (MVC vs MVP vs MVVM vs MVI)
+
+Android applications follow different architecture patterns to organize code, separate concerns, and improve maintainability. The three most common patterns are:
+
+- MVC (Model-View-Controller)
+- MVP (Model-View-Presenter)
+- MVVM (Model-View-ViewModel)
+- MVI (Model-View-Intent)
+
+Each pattern defines how data flows between different parts of an application.
+
+#### Model-View-Controller (MVC)
+
+**What is MVC?:** MVC is one of the earliest architectural patterns. It divides an app into:
+
+ - Model (M) → Manages the data and business logic.
+ - View (V) → Handles UI representation.
+ - Controller (C) → Manages user inputs and updates Model & View accordingly.
+
+- Implementation of MVC in Android
+
+```kotlin
+class UserModel {
+    fun getUserData(): String = "John Doe"
+}
+
+class UserActivity : AppCompatActivity() { // Acts as View & Controller
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val model = UserModel()
+        val userData = model.getUserData() // Fetching data
+        findViewById<TextView>(R.id.textView).text = userData // Updating UI
+    }
+}
+```
+
+| Advantages | Disadvantages |
+|----|----|
+| Simple to implement | |
+| Good for small projects | |
+| | Tightly coupled UI & logic (Activity acts as Controller & View) |
+| | Difficult to maintain & test in large applications | 
+
+#### Model-View-Presenter (MVP)
+
+**What is MVP?:** MVP evolved from MVC to separate UI logic from the View by introducing a Presenter.
+
+ - Model (M) → Handles business logic and data.
+ - View (V) → Displays UI and delegates user interactions to Presenter.
+ - Presenter (P) → Contains UI logic and interacts with both Model and View.
+
+- Implementation of MVP in Android
+
+```kotlin
+interface UserView {
+    fun showUserName(name: String)
+}
+
+class UserModel {
+    fun getUserData(): String = "John Doe"
+}
+
+class UserPresenter(private val view: UserView) {
+    private val model = UserModel()
+
+    fun loadUser() {
+        val userName = model.getUserData()
+        view.showUserName(userName)
+    }
+}
+
+class UserActivity : AppCompatActivity(), UserView {
+    private lateinit var presenter: UserPresenter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        presenter = UserPresenter(this)
+        presenter.loadUser()
+    }
+
+    override fun showUserName(name: String) {
+        findViewById<TextView>(R.id.textView).text = name
+    }
+}
+```
+
+| Advantages | Disadvantages |
+|----|----|
+| Better separation of concerns than MVC | |
+| Easier to test than MVC (Presenter is decoupled from Android components) | |
+| | Presenter can become too large (Massive Presenter) |
+| | More boilerplate compared to MVC | 
+
+#### Model-View-ViewModel (MVVM)
+
+**What is MVVM?:** MVVM is the recommended architecture by Google for Android. It introduces a ViewModel to separate UI logic from Views.
+
+ - Model (M) → Data layer (Repository, API, Database).
+ - View (V) → UI (Activity, Fragment, Jetpack Compose).
+ - ViewModel (VM) → Holds and manages UI-related data, exposing it via `LiveData` or `StateFlow`.
+
+- Implementation of MVVM in Android
+
+```kotlin
+data class User(val name: String)
+
+class UserRepository {
+    fun getUser(): User = User("John Doe")
+}
+
+class UserViewModel : ViewModel() {
+    private val _user = MutableLiveData<User>()
+    val user: LiveData<User> = _user
+
+    fun fetchUser() {
+        _user.value = UserRepository().getUser()
+    }
+}
+
+class UserActivity : AppCompatActivity() {
+    private val viewModel: UserViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        viewModel.user.observe(this) { user ->
+            findViewById<TextView>(R.id.textView).text = user.name
+        }
+
+        viewModel.fetchUser()
+    }
+}
+```
+
+| Advantages | Disadvantages |
+|----|----|
+| Better separation of concerns | |
+| Easier to test (ViewModel is independent of UI) | |
+| Survives configuration changes (ViewModel retains state) | |
+| | More boilerplate code |
+| | Tightly coupled ViewModel & UI | 
+
+#### Model-View-Intent (MVI)
+
+**What is MVI?:** MVI enforces unidirectional data flow, making state management predictable.
+
+ - Model (M) → Holds the immutable UI state.
+ - View (V) → Displays UI and reacts to state changes.
+ - Intent (I) → Represents user actions, which trigger state updates.
+
+- Implementation of MVI in Android (Jetpack Compose Example)
+
+```kotlin
+data class CounterState(val count: Int = 0)
+
+sealed class CounterIntent {
+    object Increment : CounterIntent()
+    object Decrement : CounterIntent()
+}
+
+class CounterViewModel : ViewModel() {
+    private val _state = MutableStateFlow(CounterState())
+    val state: StateFlow<CounterState> = _state
+
+    fun processIntent(intent: CounterIntent) {
+        when (intent) {
+            is CounterIntent.Increment -> _state.value = CounterState(_state.value.count + 1)
+            is CounterIntent.Decrement -> _state.value = CounterState(_state.value.count - 1)
+        }
+    }
+}
+```
+
+| Advantages | Disadvantages |
+|----|----|
+| Unidirectional data flow (Predictable state changes) | |
+| Easier to debug (Single source of truth) | |
+| Works well with Jetpack Compose | |
+| | More complex (Requires managing intents & states explicitly) |
+| | Might be overkill for simple UIs | 
+
+#### MVC vs MVP vs MVVM vs MVI Comparison
+
+| Feature | MVC | MVP | MVVM | MVI |
+|----|----|----|----|----|
+| Data Flow | Bi-directional | Bi-directional | Unidirectional | Strictly unidirectional |
+| State Management | UI controls the state | Presenter controls state | ViewModel holds the state | StateFlow holds the state |
+| Testing | Difficult | Easier | Easier | Very easy |
+| Boilerplate | Less | More | More | Most |
+| UI | Decoupling | Poor | Better	 | Good | Excellent |
+| Best For | Small projects | Medium-sized apps | General-purpose apps | State-driven UIs (Jetpack Compose) |
+
+When to Use Each Pattern?
+
+- Use MVC if:
+ - You’re building a small app with minimal business logic.
+- Use MVP if:
+ - You need better testability than MVC.
+ - You want a more structured UI logic separation.
+- Use MVVM if:
+ - You're building an Android app with Jetpack components.
+ - You need to retain state across configuration changes.
+- Use MVI if:
+ - You're building a state-driven UI (Jetpack Compose).
+ - You need predictable state changes with unidirectional data flow.
+
+#### What are UseCases in Android Architecture?
+
+A UseCase is a class that represents a single, specific business logic operation in an application.
+
+- It helps decouple business logic from ViewModel/Presenter.
+- It makes the code easier to test and reuse.
+- It improves maintainability and scalability.
+
+How UseCases Fit into MVC, MVP, MVVM, and MVI?
+
+| Architecture | UseCase Integration |
+|----|----|
+| MVC | Not commonly used (MVC tightly couples logic in UI) |
+| MVP | Used in the Presenter to delegate business logic |
+| MVVM | Used in the ViewModel to separate business logic |
+| MVI | Used in the Intent processing layer for unidirectional data flow |
+
+UseCase Examples
+
+Let’s assume we have a "GetUserProfile" feature where we fetch user data from a repository.
+
+- Define the UseCase
+
+A UseCase follows the Single Responsibility Principle and only handles one business operation.
+
+```kotlin
+class GetUserProfileUseCase(private val repository: UserRepository) {
+    suspend fun execute(userId: String): User {
+        return repository.getUserById(userId)
+    }
+}
+```
+
+- UseCase in MVP
+
+In MVP, the Presenter calls the UseCase instead of directly interacting with the repository.
+
+```kotlin
+class UserPresenter(private val view: UserView, private val getUserProfileUseCase: GetUserProfileUseCase) {
+
+    fun loadUser(userId: String) {
+        CoroutineScope(Dispatchers.IO).launch {
+            val user = getUserProfileUseCase.execute(userId)
+            withContext(Dispatchers.Main) {
+                view.showUserName(user.name)
+            }
+        }
+    }
+}
+```
+
+Benefits: Keeps business logic out of the Presenter and makes it reusable.
+
+- UseCase in MVVM
+
+In MVVM, the ViewModel calls the UseCase instead of directly calling the repository.
+
+```kotlin
+class UserViewModel(private val getUserProfileUseCase: GetUserProfileUseCase) : ViewModel() {
+    private val _user = MutableLiveData<User>()
+    val user: LiveData<User> = _user
+
+    fun fetchUser(userId: String) {
+        viewModelScope.launch {
+            _user.value = getUserProfileUseCase.execute(userId)
+        }
+    }
+}
+```
+
+Benefits: Keeps ViewModel clean and makes business logic reusable across multiple ViewModels.
+
+- UseCase in MVI
+
+In MVI, UseCases are used within Intent Processing to keep business logic separate.
+
+```kotlin
+sealed class UserIntent {
+    data class LoadUser(val userId: String) : UserIntent()
+}
+
+class UserViewModel(private val getUserProfileUseCase: GetUserProfileUseCase) : ViewModel() {
+    private val _state = MutableStateFlow<UserState>(UserState.Loading)
+    val state: StateFlow<UserState> = _state
+
+    fun processIntent(intent: UserIntent) {
+        when (intent) {
+            is UserIntent.LoadUser -> fetchUser(intent.userId)
+        }
+    }
+
+    private fun fetchUser(userId: String) {
+        viewModelScope.launch {
+            val user = getUserProfileUseCase.execute(userId)
+            _state.value = UserState.Success(user)
+        }
+    }
+}
+```
+
+Benefits: Ensures unidirectional data flow while keeping business logic separate.
+
+#### Benefits of Using UseCases
+
+- Separation of concerns: Business logic is separate from ViewModel/Presenter.
+- Reusability: The same UseCase can be used in multiple parts of the app.
+- Testability: UseCases can be unit tested without dependencies on UI.
+- Scalability: UseCases prevent fat ViewModels/Presenters, making code easier to maintain.
+
+#### When to Use UseCases?
+
+- If the business logic is complex or reused in multiple places, use a UseCase.
+- In small projects, a UseCase may not be needed, and direct repository calls in ViewModel/Presenter might be fine.
+- In large applications, UseCases improve code structure, testability, and maintainability.
 
 ### Architecture
 
