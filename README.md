@@ -6,6 +6,7 @@
 
 ## Contents
 
+* [Big O Notation](#big-o-notation)
 * [Data Structures And Algorithms](#data-structures-and-algorithms)
 * [Design patterns](#design-patterns)
 * [Core Android Components & Fundamentals](#core-android-components-fundamentals)
@@ -20,6 +21,157 @@
 * [REST APIs](#rest-apis)
 * [License](#license)
 * [How to contribute?](#how-to-contribute)
+
+## Big O Notation
+
+Big O gives an upper bound on the time or space an algorithm might take, expressed as a function of the input size `n`. It helps compare the efficiency of algorithms regardless of hardware or implementation details.
+
+### Why Use It?
+
+It answers questions like:
+
+- How does the algorithm behave as input grows?
+- Will it still be fast with a million inputs?
+- Is it faster/slower than another approach?
+
+### Common Big O Complexities
+
+| Big O | Name | Example |
+|----|----|----|
+| `O(1)`| Constant time	 | Accessing an array element |
+| `O(log n)`| Logarithmic time | Binary search |
+| `O(n)`| Linear time | Loop through an array |
+| `O(n log n)`| 	Linearithmic | Efficient sorts like mergesort |
+| `O(n²)`| Quadratic time | Nested loops (e.g., bubble sort) |
+| `O(2ⁿ)`| Exponential time | Recursive Fibonacci |
+| `O(n!)`| Factorial time | Solving permutations (e.g., TSP) |
+
+### How to Use It
+
+- Identify the input size (`n`): What is growing? Is it an array, a list of nodes, etc.?
+- Break down the algorithm into steps or loops.
+- Count how many operations run in relation to `n`.
+- Drop constants and lower-order terms: e.g., `O(3n + 5)` becomes `O(n)`.
+
+### Examples
+
+#### `O(1)` – Constant Time
+
+```kotlin
+fun getFirstElement(list: List<Int>): Int {
+    return list[0]  // Always takes the same time
+}
+```
+
+#### `O(log n)` – Logarithmic Time (e.g., Binary Search)
+
+```kotlin
+fun binarySearch(arr: List<Int>, target: Int): Int {
+    var left = 0
+    var right = arr.size - 1
+
+    while (left <= right) {
+        val mid = (left + right) / 2
+        when {
+            arr[mid] == target -> return mid
+            arr[mid] < target -> left = mid + 1
+            else -> right = mid - 1
+        }
+    }
+    return -1
+}
+```
+
+#### `O(n)` – Linear Time
+
+```kotlin
+fun printAllElements(list: List<Int>) {
+    for (item in list) {
+        println(item)
+    }
+}
+```
+
+#### `O(n log n)` – Linearithmic Time (e.g., Merge Sort)
+
+```kotlin
+fun mergeSort(list: List<Int>): List<Int> {
+    if (list.size <= 1) return list
+
+    val mid = list.size / 2
+    val left = mergeSort(list.subList(0, mid))
+    val right = mergeSort(list.subList(mid, list.size))
+
+    return merge(left, right)
+}
+
+fun merge(left: List<Int>, right: List<Int>): List<Int> {
+    val result = mutableListOf<Int>()
+    var i = 0
+    var j = 0
+
+    while (i < left.size && j < right.size) {
+        if (left[i] < right[j]) {
+            result.add(left[i++])
+        } else {
+            result.add(right[j++])
+        }
+    }
+    result.addAll(left.subList(i, left.size))
+    result.addAll(right.subList(j, right.size))
+    return result
+}
+```
+
+#### `O(n²)` –  Quadratic Time (e.g., Bubble Sort)
+
+```kotlin
+fun bubbleSort(arr: MutableList<Int>) {
+    val n = arr.size
+    for (i in 0 until n) {
+        for (j in 0 until n - i - 1) {
+            if (arr[j] > arr[j + 1]) {
+                val temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+}
+```
+
+#### `O(2ⁿ)` –  Exponential Time (e.g., Fibonacci recursion)
+
+```kotlin
+fun fibonacci(n: Int): Int {
+    if (n <= 1) return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+```
+
+#### `O(n!)` – Factorial Time (e.g., Generating permutations)
+
+```kotlin
+fun permutations(prefix: String, remaining: String) {
+    if (remaining.isEmpty()) {
+        println(prefix)
+    } else {
+        for (i in remaining.indices) {
+            permutations(
+                prefix + remaining[i],
+                remaining.substring(0, i) + remaining.substring(i + 1)
+            )
+        }
+    }
+}
+```
+
+### Tips
+
+- Only the dominant term matters.
+- Use Big O to reason about worst-case scenarios.
+- Analyze both time and space complexity if relevant.
+
 
 ## Data Structures And Algorithms
 
