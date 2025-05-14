@@ -9,8 +9,9 @@
 * [Big O Notation](#big-o-notation)
 * [Data Structures And Algorithms](#data-structures-and-algorithms)
 * [Design patterns](#design-patterns)
-* [Core Android Components & Fundamentals](#core-android-components-fundamentals)
+* [Coding Interview Patterns](#coding-interview-patterns)
 * [Kotlin Fundamentals](kotlin-fundamentals)
+* [Core Android Components & Fundamentals](#core-android-components-fundamentals)
 * [Android Services](#android-services)
 * [Long-running Operations in Android](#long-running-operations-in-android)
 * [Persistency in Android](#persistency-in-android)
@@ -697,6 +698,222 @@ void DFS(Node root) {
 - Iterator [Wikipedia](https://en.wikipedia.org/wiki/Iterator_pattern). The essence of the Iterator Pattern is to "Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation."
 - Strategy [Wikipedia](https://en.wikipedia.org/wiki/Strategy_pattern). The strategy pattern (also known as the policy pattern) is a behavioral software design pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use. Strategy lets the algorithm vary independently from clients that use it. Strategy is one of the patterns included in the influential book Design Patterns by Gamma et al. that popularized the concept of using design patterns to describe how to design flexible and reusable object-oriented software. Deferring the decision about which algorithm to use until runtime allows the calling code to be more flexible and reusable. 
 - Observer [Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern). The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. It is mainly used to implement distributed event handling systems, in "event driven" software. Most modern languages such as C# have built in "event" constructs which implement the observer pattern components, for easy programming and short code.
+
+## Coding Interview Patterns
+
+### Two Pointers
+
+Used when working with sorted arrays or searching for pairs. Helps reduce nested loops to linear time.
+
+```kotlin
+fun hasPairWithSum(arr: IntArray, target: Int): Boolean {
+    var left = 0
+    var right = arr.lastIndex
+    while (left < right) {
+        val sum = arr[left] + arr[right]
+        when {
+            sum == target -> return true
+            sum < target -> left++
+            else -> right--
+        }
+    }
+    return false
+}
+```
+
+### Sliding Window
+
+Efficient for problems involving contiguous subarrays/substrings. Avoids recomputing on overlapping data.
+
+```kotlin
+fun maxSumSubarray(arr: IntArray, k: Int): Int {
+    var maxSum = 0
+    var windowSum = 0
+    for (i in arr.indices) {
+        windowSum += arr[i]
+        if (i >= k) windowSum -= arr[i - k]
+        if (i >= k - 1) maxSum = maxOf(maxSum, windowSum)
+    }
+    return maxSum
+}
+```
+
+### Divide and Conquer
+
+Breaks a problem into smaller subproblems, solves them independently, and combines the results.
+
+```kotlin
+fun mergeSort(arr: IntArray): IntArray {
+    if (arr.size <= 1) return arr
+    val mid = arr.size / 2
+    val left = mergeSort(arr.sliceArray(0 until mid))
+    val right = mergeSort(arr.sliceArray(mid until arr.size))
+    return merge(left, right)
+}
+```
+
+### Dynamic Programming
+
+Solves problems with overlapping subproblems by storing and reusing results to avoid recomputation.
+
+```kotlin
+fun fib(n: Int): Int {
+    if (n <= 1) return n
+    val dp = IntArray(n + 1)
+    dp[1] = 1
+    for (i in 2..n) dp[i] = dp[i - 1] + dp[i - 2]
+    return dp[n]
+}
+```
+
+### Greedy
+
+Builds up a solution piece by piece, always choosing the best next step (local optimum) at each stage.
+
+```kotlin
+fun jumpGame(nums: IntArray): Boolean {
+    var maxReach = 0
+    for (i in nums.indices) {
+        if (i > maxReach) return false
+        maxReach = maxOf(maxReach, i + nums[i])
+    }
+    return true
+}
+```
+
+### DFS / BFS
+
+Traversal techniques for trees, graphs, and grids. DFS uses recursion or stack; BFS uses a queue.
+
+```kotlin
+fun dfs(graph: Map<Int, List<Int>>, start: Int, visited: MutableSet<Int>) {
+    if (start in visited) return
+    visited.add(start)
+    for (neighbor in graph[start] ?: listOf()) {
+        dfs(graph, neighbor, visited)
+    }
+}
+
+fun bfs(graph: Map<Int, List<Int>>, start: Int) {
+    val queue = ArrayDeque<Int>()
+    val visited = mutableSetOf<Int>()
+    queue.add(start)
+    while (queue.isNotEmpty()) {
+        val node = queue.removeFirst()
+        if (node in visited) continue
+        visited.add(node)
+        queue.addAll(graph[node] ?: listOf())
+    }
+}
+```
+
+### Binary Search
+
+Used on sorted data to repeatedly halve the search space. Time complexity: O(log n).
+
+```kotlin
+fun binarySearch(arr: IntArray, target: Int): Int {
+    var left = 0
+    var right = arr.lastIndex
+    while (left <= right) {
+        val mid = (left + right) / 2
+        when {
+            arr[mid] == target -> return mid
+            arr[mid] < target -> left = mid + 1
+            else -> right = mid - 1
+        }
+    }
+    return -1
+}
+```
+
+### Union-Find (Disjoint Set)
+
+A data structure for tracking a set of elements split into disjoint subsets. Common in graph cycle detection.
+
+```kotlin
+class UnionFind(n: Int) {
+    private val parent = IntArray(n) { it }
+
+    fun find(x: Int): Int {
+        if (parent[x] != x) parent[x] = find(parent[x])
+        return parent[x]
+    }
+
+    fun union(x: Int, y: Int) {
+        val rootX = find(x)
+        val rootY = find(y)
+        if (rootX != rootY) parent[rootY] = rootX
+    }
+}
+```
+
+### Bit Manipulation
+
+Efficient for low-level data tasks: toggling bits, checking parity, or solving subset problems.
+
+```kotlin
+fun singleNumber(nums: IntArray): Int {
+    var result = 0
+    for (num in nums) {
+        result = result xor num
+    }
+    return result
+}
+```
+
+### Topological Sort
+
+For ordering nodes in a DAG (Directed Acyclic Graph) where dependencies exist.
+
+```kotlin
+fun topologicalSort(graph: Map<Int, List<Int>>, numNodes: Int): List<Int> {
+    val inDegree = IntArray(numNodes)
+    for (edges in graph.values) {
+        for (node in edges) inDegree[node]++
+    }
+
+    val queue = ArrayDeque<Int>()
+    for (i in 0 until numNodes) {
+        if (inDegree[i] == 0) queue.add(i)
+    }
+
+    val order = mutableListOf<Int>()
+    while (queue.isNotEmpty()) {
+        val node = queue.removeFirst()
+        order.add(node)
+        for (neighbor in graph[node] ?: listOf()) {
+            inDegree[neighbor]--
+            if (inDegree[neighbor] == 0) queue.add(neighbor)
+        }
+    }
+
+    return if (order.size == numNodes) order else emptyList()
+}
+```
+
+### What, When, and Why
+
+| Pattern | What It Is | When to Use | Why It’s Useful |
+|----|----|----|----|
+| Two Pointers | Use two indices to traverse from different ends or speeds. | Arrays or strings that are sorted or need pair-based logic. | Reduces nested loops to linear time. |
+| Sliding Window | Maintain a window over part of a sequence and move it efficiently. | Subarray/substring problems where you track max/min/sum/count in a window. | Avoids recalculating overlapping data. |
+| Divide & Conquer | Break problem into smaller subproblems, solve independently, and combine. | Sorting, searching, and recursive breakdowns (e.g., merge sort, binary search). | Makes complex problems manageable recursively. |
+| Dynamic Programming (DP) | Store and reuse results of overlapping subproblems. | Optimal substructure + overlapping subproblems (e.g., Fibonacci, knapsack). | Converts exponential brute force to polynomial time. |
+| Greedy | Make locally optimal choices hoping for a global optimum. | Optimization problems like scheduling, intervals, or coin change. | Simpler and faster than DP (when applicable). |
+| DFS / BFS | Traverse trees, graphs, or grids in depth or breadth first. | Graph traversal, connected components, maze solving, shortest paths. | Standard traversal tools in graph-related problems. |
+| Binary Search | Repeatedly divide a sorted array to find a target. | When the input is sorted or when checking a "yes/no" condition over a range. | Very fast search: `O(log n)`. |
+| Union-Find (DSU) | Track disjoint sets and efficiently merge/find their roots. | When managing groups/connected components or detecting cycles. | Great for Kruskal’s MST or "are they connected?" queries. |
+| Bit Manipulation | Directly manipulate bits of integers. | Low-level tasks like power-of-two checks, subsets, toggles, or `XOR` tricks. | Super-efficient for state space or uniqueness checks. |
+| Topological Sort | Linear ordering of a DAG based on dependencies. | Tasks with prerequisites (e.g., course schedule, job build order). | Ensures valid order when dependencies must be respected. |
+
+### Useful tips
+
+- If a brute force solution is `O(n²)` or worse, look for Sliding Window, Two Pointers, or DP.
+- If the data is sorted, consider Binary Search or Two Pointers.
+- If the problem involves choices/paths, consider Backtracking, DFS, or Greedy.
+- If there's state reuse, think DP.
+- If you're told something like "you can do this task only after another", that's a hint for Topological Sort.
 
 ## Kotlin Fundamentals
 
