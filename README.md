@@ -239,136 +239,153 @@ Image representation:
 
   - Search 
 
-	```java
-	public Node search(Node root, int key) {
-	    // Base Cases: root is null or key is present at root
-	    if (root==null || root.key==key)
-	        return root;
-	    // val is greater than root's key
-	    if (root.key > key)
-	        return search(root.left, key);
-	    // val is less than root's key
-	    return search(root.right, key);
+	```kotlin
+	fun search(root: Node?, key: Int): Node? {
+    	// Base Cases: root is null or key is present at root
+    	if (root == null || root.key == key) {
+    		return root
+		}
+
+		// key is smaller than root's key
+    	return if (key < root.key) {
+	    	search(root.left, key)
+    	} else {
+    		search(root.right, key)
+		}
 	}
 	```
   
   - Insert
 	
-	```java
+	```kotlin
 	// This method mainly calls insertRec()
-	void insert(int key) {
-	   root = insertRec(root, key);
+	fun insert(key: Int) {
+		root = insertRec(root, key)
 	}
-	 
+
 	/* A recursive function to insert a new key in BST */
-	Node insertRec(Node root, int key) {
-	    /* If the tree is empty, return a new node */
-	    if (root == null) {
-	        root = new Node(key);
-	        return root;
-	    }
-	    /* Otherwise, recur down the tree */
-	    if (key < root.key)
-	        root.left = insertRec(root.left, key);
-	    else if (key > root.key)
-	        root.right = insertRec(root.right, key);
-	 
-	    /* return the (unchanged) node pointer */
-	    return root;
+	fun insertRec(root: Node?, key: Int): Node {
+		// If the tree is empty, return a new node
+		if (root == null) {
+			return Node(key)
+		}
+		
+		// Otherwise, recur down the tree
+		if (key < root.key) {
+			root.left = insertRec(root.left, key)
+		} else if (key > root.key) {
+			root.right = insertRec(root.right, key)
+		}
+		
+		// Return the (unchanged) node pointer
+		return root
 	}
 	```
 	
   - Delete
 	
-	```java
+	```kotlin
 	// This method mainly calls deleteRec()
-	void deleteKey(int key) {
-		root = deleteRec(root, key);
+	fun deleteKey(key: Int) {
+		root = deleteRec(root, key)
 	}
-	 
-	/* A recursive function to insert a new key in BST */
-	Node deleteRec(Node root, int key) {
-	    /* Base Case: If the tree is empty */
-	    if (root == null)  return root;
-	    /* Otherwise, recur down the tree */
-	    if (key < root.key)
-	        root.left = deleteRec(root.left, key);
-	    else if (key > root.key)
-	        root.right = deleteRec(root.right, key);
-	        // if key is same as root's key, then This is 
-	        // the node to be deleted
-	    else {
-	        // node with only one child or no child
-	        if (root.left == null)
-	            return root.right;
-	        else if (root.right == null)
-	            return root.left;
-	        // node with two children: Get the inorder
-	        // successor (smallest in the right subtree)
-	        root.key = minValue(root.right);
-	        // Delete the inorder successor
-	        root.right = deleteRec(root.right, root.key);
-	    }
-	    return root;
+	
+	/* A recursive function to delete a key in BST */
+	fun deleteRec(root: Node?, key: Int): Node? {
+		// Base Case: If the tree is empty
+		if (root == null) return null
+		
+		when {
+			key < root.key -> root.left = deleteRec(root.left, key)
+			key > root.key -> root.right = deleteRec(root.right, key)
+			else -> {
+				// Node to be deleted found
+				// Node with only one child or no child
+				if (root.left == null) return root.right
+				if (root.right == null) return root.left
+				// Node with two children: get the inorder successor (smallest in the right subtree)
+				root.key = minValue(root.right!!)
+				// Delete the inorder successor
+				root.right = deleteRec(root.right, root.key)
+			}
+		}
+		return root
 	}
+	
+	/* Utility function to find the smallest key in a subtree */
+	fun minValue(node: Node): Int {
+		var current = node
+		while (current.left != null) {
+			current = current.left!!
+		}
+		return current.key
+	}	
 	```
 
   - Pre Order traversal
 		
-	```java
-	void printPreorder(Node node) {
-	    if (node == null)
-	        return;
-	    /* then print the data of node */
-	    System.out.print(node.key + " ");
-	    /* first recur on left child */
-	    printPreorder(node.left);
-	    /* now recur on right child */
-	    printPreorder(node.right);
+	```kotlin
+	fun printPreorder(node: Node?) {
+		if (node == null) return
+		
+		// Print the data of node
+		print("${node.key}")
+		
+		// First recur on left child
+		printPreorder(node.left)
+		
+		// Now recur on right child
+		printPreorder(node.right)
 	}
 	```
 	
   - In Order traversal :
 		
-	```java
-	void printInorder(Node node) {
-	    if (node == null)
-	        return;
-	    /* first recur on left child */
-	    printInorder(node.left);
-	    /* then print the data of node */
-	    System.out.print(node.key + " ");
-	    /* now recur on right child */
-	    printInorder(node.right);
+	```kotlin
+	fun printInorder(node: Node?) {
+		if (node == null) return
+		
+		// First recur on left child
+		printInorder(node.left)
+		
+		// Then print the data of node
+		print("${node.key} ")
+		
+		// Now recur on right child
+		printInorder(node.right)
 	}
 	```
 		
   - Post Order traversal :
 		
-	```java
-	void printPostorder(Node node) {
-	    if (node == null)
-	        return;
-	    /* first recur on left child */
-	    printPostorder(node.left);
-	    /* now recur on right child */
-	    printPostorder(node.right);
-	    /* then print the data of node */
-	    System.out.print(node.key + " ");
-	}
+	```kotlin
+	fun printPostorder(node: Node?) {
+		if (node == null) return
+		
+		// First recur on left child
+		printPostorder(node.left)
+		
+		// Now recur on right child
+		printPostorder(node.right)
+		
+		// Then print the data of node
+		print("${node.key} ")
+		}
 	```
 
   - Maximum Depth or Height of a Tree :
 	
-	```java
-	int maxDepth(Node node) { 
-		if (node == null) return 0;
-		else {
-			return Math.max(
-				maxDepth(node.left) + 1,
-				maxDepth(node.right) + 1);
+	```kotlin
+	fun maxDepth(node: Node?): Int {
+		return if (node == null) {
+			0
+		} else {
+			maxOf(
+				maxDepth(node.left),
+				maxDepth(node.right)
+			) + 1
 		}
-	} 
+	}
 	```
 
 - Hash Table or Hash Map: A Hash Table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ an imperfect hash function, which might cause hash collisions where the hash function generates the same index for more than one key. Such collisions must be accommodated in some way.
